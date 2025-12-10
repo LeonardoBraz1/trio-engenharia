@@ -35,15 +35,15 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-xl">Í</span>
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary rounded-lg flex items-center justify-center">
+                <span className="text-primary-foreground font-heading font-bold text-lg sm:text-xl">Í</span>
               </div>
               <div className="flex flex-col">
-                <span className={`font-heading font-bold text-lg leading-tight ${isScrolled ? 'text-primary' : 'text-primary-foreground'}`}>
+                <span className={`font-heading font-bold text-base sm:text-lg leading-tight ${isScrolled ? 'text-primary' : 'text-primary-foreground'}`}>
                   ÍTRIO
                 </span>
-                <span className={`text-xs font-medium tracking-wider ${isScrolled ? 'text-muted-foreground' : 'text-primary-foreground/80'}`}>
+                <span className={`text-[10px] sm:text-xs font-medium tracking-wider ${isScrolled ? 'text-muted-foreground' : 'text-primary-foreground/80'}`}>
                   ENGENHARIA
                 </span>
               </div>
