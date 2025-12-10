@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { MessageCircle, ArrowRight } from 'lucide-react';
 import heroImage from '@/assets/hero-engineering.jpg';
+import { ScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const HeroSection = () => {
   const whatsappLink = 'https://wa.me/5511914953344?text=Olá! Gostaria de falar com um engenheiro.';
@@ -28,58 +29,68 @@ const HeroSection = () => {
       <div className="relative z-10 section-container py-24 sm:py-32 md:py-40">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full border border-primary-foreground/20 mb-6 sm:mb-8 animate-fade-up opacity-0" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent rounded-full animate-pulse" />
-            <span className="text-primary-foreground/90 text-xs sm:text-sm font-medium">
-              Vistorias • Laudos Técnicos • ART
-            </span>
-          </div>
+          <ScrollAnimation animation="fade-up" delay={100}>
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full border border-primary-foreground/20 mb-6 sm:mb-8">
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent rounded-full animate-pulse" />
+              <span className="text-primary-foreground/90 text-xs sm:text-sm font-medium">
+                Vistorias • Laudos Técnicos • ART
+              </span>
+            </div>
+          </ScrollAnimation>
 
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-4 sm:mb-6 animate-fade-up opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-            Engenharia com{' '}
-            <span className="text-gradient">precisão</span>,{' '}
-            <br className="hidden sm:block" />
-            confiança e resultados.
-          </h1>
+          <ScrollAnimation animation="fade-up" delay={200}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-4 sm:mb-6">
+              Engenharia com{' '}
+              <span className="text-gradient">precisão</span>,{' '}
+              <br className="hidden sm:block" />
+              confiança e resultados.
+            </h1>
+          </ScrollAnimation>
 
           {/* Supporting Text */}
-          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-8 sm:mb-10 max-w-2xl animate-fade-up opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
-            Vistorias, orientação em adequação, Laudos Técnicos e ART para garantir 
-            segurança e credibilidade ao seu negócio.
-          </p>
+          <ScrollAnimation animation="fade-up" delay={300}>
+            <p className="text-base sm:text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-8 sm:mb-10 max-w-2xl">
+              Vistorias, orientação em adequação, Laudos Técnicos e ART para garantir 
+              segurança e credibilidade ao seu negócio.
+            </p>
+          </ScrollAnimation>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-up opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              <Button variant="whatsapp" size="xl" className="w-full sm:w-auto">
-                <MessageCircle className="w-5 h-5" />
-                Fale com um Engenheiro
-              </Button>
-            </a>
-            <a href="#servicos">
-              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
-                Conheça os Serviços
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-            </a>
-          </div>
+          <ScrollAnimation animation="fade-up" delay={400}>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <Button variant="whatsapp" size="xl" className="w-full sm:w-auto">
+                  <MessageCircle className="w-5 h-5" />
+                  Fale com um Engenheiro
+                </Button>
+              </a>
+              <a href="#servicos">
+                <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
+                  Conheça os Serviços
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
+            </div>
+          </ScrollAnimation>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap gap-6 sm:gap-8 mt-10 sm:mt-16 pt-6 sm:pt-8 border-t border-primary-foreground/10 animate-fade-up opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-            <div>
-              <p className="text-2xl sm:text-3xl font-heading font-bold text-accent">100+</p>
-              <p className="text-primary-foreground/70 text-xs sm:text-sm">Laudos Emitidos</p>
+          <ScrollAnimation animation="fade-up" delay={500}>
+            <div className="flex flex-wrap gap-6 sm:gap-8 mt-10 sm:mt-16 pt-6 sm:pt-8 border-t border-primary-foreground/10">
+              <div>
+                <p className="text-2xl sm:text-3xl font-heading font-bold text-accent">100+</p>
+                <p className="text-primary-foreground/70 text-xs sm:text-sm">Laudos Emitidos</p>
+              </div>
+              <div>
+                <p className="text-2xl sm:text-3xl font-heading font-bold text-accent">50+</p>
+                <p className="text-primary-foreground/70 text-xs sm:text-sm">Empresas Atendidas</p>
+              </div>
+              <div>
+                <p className="text-2xl sm:text-3xl font-heading font-bold text-accent">100%</p>
+                <p className="text-primary-foreground/70 text-xs sm:text-sm">Conformidade</p>
+              </div>
             </div>
-            <div>
-              <p className="text-2xl sm:text-3xl font-heading font-bold text-accent">50+</p>
-              <p className="text-primary-foreground/70 text-xs sm:text-sm">Empresas Atendidas</p>
-            </div>
-            <div>
-              <p className="text-2xl sm:text-3xl font-heading font-bold text-accent">100%</p>
-              <p className="text-primary-foreground/70 text-xs sm:text-sm">Conformidade</p>
-            </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
 

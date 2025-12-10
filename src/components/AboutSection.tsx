@@ -1,5 +1,6 @@
 import { CheckCircle } from 'lucide-react';
 import aboutImage from '@/assets/about-engineer.jpg';
+import { ScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const AboutSection = () => {
   const highlights = [
@@ -14,33 +15,35 @@ const AboutSection = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Image */}
-          <div className="relative animate-slide-in-left opacity-0 order-2 lg:order-1" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-            <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-float">
-              <img
-                src={aboutImage}
-                alt="Engenheira analisando equipamentos industriais"
-                className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
-              />
-              {/* Overlay Card */}
-              <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-card/95 backdrop-blur-md rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-elevated">
-                <div className="flex items-center gap-3 sm:gap-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-lg flex items-center justify-center">
-                    <span className="text-accent-foreground font-heading font-bold text-lg sm:text-xl">Í</span>
-                  </div>
-                  <div>
-                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base">ÍTRIO Engenharia</p>
-                    <p className="text-muted-foreground text-xs sm:text-sm">Excelência em engenharia técnica</p>
+          <ScrollAnimation animation="slide-left" delay={100} className="order-2 lg:order-1">
+            <div className="relative">
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-float">
+                <img
+                  src={aboutImage}
+                  alt="Engenheira analisando equipamentos industriais"
+                  className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
+                />
+                {/* Overlay Card */}
+                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-card/95 backdrop-blur-md rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-elevated">
+                  <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-lg flex items-center justify-center">
+                      <span className="text-accent-foreground font-heading font-bold text-lg sm:text-xl">Í</span>
+                    </div>
+                    <div>
+                      <p className="font-heading font-semibold text-foreground text-sm sm:text-base">ÍTRIO Engenharia</p>
+                      <p className="text-muted-foreground text-xs sm:text-sm">Excelência em engenharia técnica</p>
+                    </div>
                   </div>
                 </div>
               </div>
+              {/* Decorative */}
+              <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-20 sm:w-32 h-20 sm:h-32 bg-accent/20 rounded-xl sm:rounded-2xl -z-10 hidden sm:block" />
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-16 sm:w-24 h-16 sm:h-24 bg-primary/10 rounded-xl sm:rounded-2xl -z-10 hidden sm:block" />
             </div>
-            {/* Decorative */}
-            <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-20 sm:w-32 h-20 sm:h-32 bg-accent/20 rounded-xl sm:rounded-2xl -z-10 hidden sm:block" />
-            <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-16 sm:w-24 h-16 sm:h-24 bg-primary/10 rounded-xl sm:rounded-2xl -z-10 hidden sm:block" />
-          </div>
+          </ScrollAnimation>
 
           {/* Content */}
-          <div className="animate-slide-in-right opacity-0 order-1 lg:order-2" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+          <ScrollAnimation animation="slide-right" delay={200} className="order-1 lg:order-2">
             <span className="inline-block text-accent font-semibold text-xs sm:text-sm tracking-wider uppercase mb-3 sm:mb-4">
               Sobre Nós
             </span>
@@ -69,7 +72,7 @@ const AboutSection = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     </section>
