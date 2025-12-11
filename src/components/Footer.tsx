@@ -54,7 +54,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-4 sm:mb-6">
               <img
-                src="/branco.png"
+                src={`${import.meta.env.BASE_URL}branco.png`}
                 alt="ÍTRIO Engenharia"
                 className="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto"
               />

@@ -31,7 +31,7 @@ const AboutSection = () => {
                 <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-card/95 backdrop-blur-md rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-elevated">
                   <div className="flex items-center gap-3 sm:gap-4">
                     <img
-                      src="/azul.png"
+                      src={`${import.meta.env.BASE_URL}azul.png`}
                       alt="ÍTRIO Engenharia"
                       className="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto"
                     />

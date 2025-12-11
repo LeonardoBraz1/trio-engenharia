@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
@@ -7,6 +7,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const isServicePage = location.pathname.startsWith("/servicos/");
 
   useEffect(() => {
@@ -28,7 +29,9 @@ const Header = () => {
     "https://wa.me/5511914953344?text=Olá! Gostaria de solicitar um orçamento.";
 
   const shouldUseDarkColors = isScrolled || isServicePage;
-  const logoSource = shouldUseDarkColors ? "/azul.png" : "/branco.png";
+  const logoSource = shouldUseDarkColors
+    ? `${import.meta.env.BASE_URL}azul.png`
+    : `${import.meta.env.BASE_URL}branco.png`;
   const textColor = shouldUseDarkColors
     ? "text-foreground"
     : "text-primary-foreground";
@@ -40,7 +43,7 @@ const Header = () => {
     e.preventDefault();
 
     if (isServicePage) {
-      window.location.href = `/${href}`;
+      navigate(`/${href}`);
       return;
     }
 
@@ -106,7 +109,13 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <a
-            href={isServicePage ? "/" : "#inicio"}
+            href={isServicePage ? `${import.meta.env.BASE_URL}` : "#inicio"}
+            onClick={(e) => {
+              if (isServicePage) {
+                e.preventDefault();
+                navigate("/");
+              }
+            }}
             className="flex items-center gap-2"
           >
             <img
@@ -121,10 +130,19 @@ const Header = () => {
             {navItems.map((item) => (
               <a
                 key={item.label}
-                href={isServicePage ? `/${item.href}` : item.href}
-                onClick={(e) =>
-                  !isServicePage && handleSmoothScroll(e, item.href)
+                href={
+                  isServicePage
+                    ? `${import.meta.env.BASE_URL}${item.href}`
+                    : item.href
                 }
+                onClick={(e) => {
+                  if (isServicePage) {
+                    e.preventDefault();
+                    navigate(`/${item.href}`);
+                  } else {
+                    handleSmoothScroll(e, item.href);
+                  }
+                }}
                 className={`font-medium transition-colors duration-200 hover:text-accent ${textColor}`}
               >
                 {item.label}
@@ -161,12 +179,18 @@ const Header = () => {
               {navItems.map((item) => (
                 <a
                   key={item.label}
-                  href={isServicePage ? `/${item.href}` : item.href}
+                  href={
+                    isServicePage
+                      ? `${import.meta.env.BASE_URL}${item.href}`
+                      : item.href
+                  }
                   onClick={(e) => {
-                    if (!isServicePage) {
-                      handleSmoothScroll(e, item.href);
-                    } else {
+                    if (isServicePage) {
+                      e.preventDefault();
+                      navigate(`/${item.href}`);
                       setIsMobileMenuOpen(false);
+                    } else {
+                      handleSmoothScroll(e, item.href);
                     }
                   }}
                   className="text-foreground font-medium py-2 hover:text-accent transition-colors"
