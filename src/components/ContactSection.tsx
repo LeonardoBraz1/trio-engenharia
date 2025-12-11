@@ -1,22 +1,23 @@
-import { MessageCircle, Mail, Phone } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { ScrollAnimation } from '@/hooks/useScrollAnimation';
+import { MessageCircle, Mail, Phone, Facebook, Instagram } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const ContactSection = () => {
-  const whatsappLink = 'https://wa.me/5511914953344?text=Olá! Gostaria de solicitar um orçamento.';
+  const whatsappLink =
+    "https://wa.me/5511914953344?text=Olá! Gostaria de solicitar um orçamento.";
 
   const contactInfo = [
     {
       icon: Phone,
-      label: 'WhatsApp',
-      value: '(11) 91495-3344',
+      label: "WhatsApp",
+      value: "(11) 91495-3344",
       href: whatsappLink,
     },
     {
       icon: Mail,
-      label: 'E-mail',
-      value: 'thayslima@itrioengenharia.com.br',
-      href: 'mailto:thayslima@itrioengenharia.com.br',
+      label: "E-mail",
+      value: "thayslima@itrioengenharia.com.br",
+      href: "mailto:thayslima@itrioengenharia.com.br",
     },
   ];
 
@@ -25,7 +26,10 @@ const ContactSection = () => {
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <ScrollAnimation animation="fade-up" className="text-center mb-10 sm:mb-16">
+          <ScrollAnimation
+            animation="fade-up"
+            className="text-center mb-10 sm:mb-16"
+          >
             <span className="inline-block text-accent font-semibold text-xs sm:text-sm tracking-wider uppercase mb-3 sm:mb-4">
               Contato
             </span>
@@ -33,7 +37,7 @@ const ContactSection = () => {
               Vamos conversar sobre seu projeto?
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-sm sm:text-base px-4 sm:px-0">
-              Entre em contato conosco para tirar dúvidas, solicitar orçamentos 
+              Entre em contato conosco para tirar dúvidas, solicitar orçamentos
               ou agendar uma visita técnica.
             </p>
           </ScrollAnimation>
@@ -43,7 +47,10 @@ const ContactSection = () => {
             <div className="bg-card rounded-xl sm:rounded-2xl shadow-float border border-border/50 overflow-hidden">
               <div className="grid md:grid-cols-2">
                 {/* Left - CTA */}
-                <div className="p-6 sm:p-10 md:p-12" style={{ background: 'var(--gradient-hero)' }}>
+                <div
+                  className="p-6 sm:p-10 md:p-12"
+                  style={{ background: "var(--gradient-hero)" }}
+                >
                   <div className="h-full flex flex-col justify-between">
                     <div>
                       <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary-foreground/10 rounded-lg sm:rounded-xl flex items-center justify-center mb-4 sm:mb-6">
@@ -53,13 +60,24 @@ const ContactSection = () => {
                         Fale diretamente com um engenheiro
                       </h3>
                       <p className="text-primary-foreground/80 mb-6 sm:mb-8 text-sm sm:text-base">
-                        Resposta rápida e atendimento personalizado para suas necessidades.
+                        Resposta rápida e atendimento personalizado para suas
+                        necessidades.
                       </p>
                     </div>
-                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                      <Button variant="whatsapp" size="lg" className="w-full text-sm sm:text-base">
+                    <a
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        variant="whatsapp"
+                        size="lg"
+                        className="w-full text-sm sm:text-base"
+                      >
                         <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
-                        <span className="hidden sm:inline">Iniciar Conversa no WhatsApp</span>
+                        <span className="hidden sm:inline">
+                          Iniciar Conversa no WhatsApp
+                        </span>
                         <span className="sm:hidden">WhatsApp</span>
                       </Button>
                     </a>
@@ -84,7 +102,9 @@ const ContactSection = () => {
                           <item.icon className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
                         </div>
                         <div className="min-w-0 flex-1">
-                          <p className="text-muted-foreground text-xs sm:text-sm">{item.label}</p>
+                          <p className="text-muted-foreground text-xs sm:text-sm">
+                            {item.label}
+                          </p>
                           <p className="text-foreground font-medium group-hover:text-accent transition-colors text-sm sm:text-base break-all sm:break-normal">
                             {item.value}
                           </p>
@@ -94,12 +114,37 @@ const ContactSection = () => {
                   </div>
 
                   <div className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-border">
-                    <p className="text-xs sm:text-sm text-muted-foreground">
+                    <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">
                       Horário de atendimento
                     </p>
-                    <p className="text-foreground font-medium text-sm sm:text-base">
+                    <p className="text-foreground font-medium text-sm sm:text-base mb-6 sm:mb-8">
                       Segunda a Sexta, 8h às 18h
                     </p>
+                    <div>
+                      <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">
+                        Redes Sociais
+                      </p>
+                      <div className="flex items-center gap-3 sm:gap-4">
+                        <a
+                          href="https://www.facebook.com/people/%C3%8Dtrio-Engenharia/61572858839001/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-10 h-10 sm:w-12 sm:h-12 bg-accent/10 rounded-lg flex items-center justify-center hover:bg-accent/20 transition-colors group"
+                          aria-label="Facebook"
+                        >
+                          <Facebook className="w-5 h-5 sm:w-6 sm:h-6 text-accent group-hover:scale-110 transition-transform" />
+                        </a>
+                        <a
+                          href="https://www.instagram.com/eng.thays_lima/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-10 h-10 sm:w-12 sm:h-12 bg-accent/10 rounded-lg flex items-center justify-center hover:bg-accent/20 transition-colors group"
+                          aria-label="Instagram"
+                        >
+                          <Instagram className="w-5 h-5 sm:w-6 sm:h-6 text-accent group-hover:scale-110 transition-transform" />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

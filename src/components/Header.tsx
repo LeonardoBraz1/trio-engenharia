@@ -1,53 +1,119 @@
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isServicePage = location.pathname.startsWith("/servicos/");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { label: 'Início', href: '#inicio' },
-    { label: 'Sobre', href: '#sobre' },
-    { label: 'Serviços', href: '#servicos' },
-    { label: 'Contato', href: '#contato' },
+    { label: "Início", href: "#inicio" },
+    { label: "Sobre", href: "#sobre" },
+    { label: "Serviços", href: "#servicos" },
+    { label: "Contato", href: "#contato" },
   ];
 
-  const whatsappLink = 'https://wa.me/5511914953344?text=Olá! Gostaria de solicitar um orçamento.';
+  const whatsappLink =
+    "https://wa.me/5511914953344?text=Olá! Gostaria de solicitar um orçamento.";
+
+  const shouldUseDarkColors = isScrolled || isServicePage;
+  const logoSource = shouldUseDarkColors ? "/azul.png" : "/branco.png";
+  const textColor = shouldUseDarkColors
+    ? "text-foreground"
+    : "text-primary-foreground";
+
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+
+    if (isServicePage) {
+      window.location.href = `/${href}`;
+      return;
+    }
+
+    const targetId = href.replace("#", "");
+
+    const smoothScrollTo = (targetY: number, duration: number = 800) => {
+      const startY = window.pageYOffset;
+      const distance = targetY - startY;
+      let startTime: number | null = null;
+
+      const easeInOutCubic = (t: number): number => {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      };
+
+      const animation = (currentTime: number) => {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        const ease = easeInOutCubic(progress);
+
+        window.scrollTo(0, startY + distance * ease);
+
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        }
+      };
+
+      requestAnimationFrame(animation);
+      setIsMobileMenuOpen(false);
+    };
+
+    const scrollToElement = () => {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement && targetElement.offsetParent !== null) {
+        const headerOffset = 120;
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+        const targetPosition = Math.max(0, offsetPosition);
+
+        smoothScrollTo(targetPosition);
+        return true;
+      }
+      return false;
+    };
+
+    if (!scrollToElement()) {
+      setTimeout(() => {
+        scrollToElement();
+      }, 100);
+    }
+  };
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-card/95 backdrop-blur-md shadow-elevated'
-          : 'bg-transparent'
+          ? "bg-card/95 backdrop-blur-md shadow-elevated"
+          : "bg-transparent"
       }`}
     >
       <div className="section-container">
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2">
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-lg sm:text-xl">Í</span>
-              </div>
-              <div className="flex flex-col">
-                <span className={`font-heading font-bold text-base sm:text-lg leading-tight ${isScrolled ? 'text-primary' : 'text-primary-foreground'}`}>
-                  ÍTRIO
-                </span>
-                <span className={`text-[10px] sm:text-xs font-medium tracking-wider ${isScrolled ? 'text-muted-foreground' : 'text-primary-foreground/80'}`}>
-                  ENGENHARIA
-                </span>
-              </div>
-            </div>
+          <a
+            href={isServicePage ? "/" : "#inicio"}
+            className="flex items-center gap-2"
+          >
+            <img
+              src={logoSource}
+              alt="ÍTRIO Engenharia"
+              className="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -55,10 +121,11 @@ const Header = () => {
             {navItems.map((item) => (
               <a
                 key={item.label}
-                href={item.href}
-                className={`font-medium transition-colors duration-200 hover:text-accent ${
-                  isScrolled ? 'text-foreground' : 'text-primary-foreground'
-                }`}
+                href={isServicePage ? `/${item.href}` : item.href}
+                onClick={(e) =>
+                  !isServicePage && handleSmoothScroll(e, item.href)
+                }
+                className={`font-medium transition-colors duration-200 hover:text-accent ${textColor}`}
               >
                 {item.label}
               </a>
@@ -80,9 +147,9 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className={`w-6 h-6 ${isScrolled ? 'text-foreground' : 'text-primary-foreground'}`} />
+              <X className={`w-6 h-6 ${textColor}`} />
             ) : (
-              <Menu className={`w-6 h-6 ${isScrolled ? 'text-foreground' : 'text-primary-foreground'}`} />
+              <Menu className={`w-6 h-6 ${textColor}`} />
             )}
           </button>
         </nav>
@@ -94,8 +161,14 @@ const Header = () => {
               {navItems.map((item) => (
                 <a
                   key={item.label}
-                  href={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  href={isServicePage ? `/${item.href}` : item.href}
+                  onClick={(e) => {
+                    if (!isServicePage) {
+                      handleSmoothScroll(e, item.href);
+                    } else {
+                      setIsMobileMenuOpen(false);
+                    }
+                  }}
                   className="text-foreground font-medium py-2 hover:text-accent transition-colors"
                 >
                   {item.label}
