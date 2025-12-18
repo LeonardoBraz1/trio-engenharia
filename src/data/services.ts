@@ -59,9 +59,9 @@ export const servicesData: Record<string, ServiceArticle> = {
                 "Incluímos na contratação a emissão de ART (Anotação de Responsabilidade Técnica), um documento essencial assinado por um engenheiro registrado no CREA.",
             },
             {
-              title: "Laudo técnico encadernado",
+              title: "Laudo técnico",
               description:
-                "Fornecemos duas vias encadernadas do laudo técnico completo - uma para a subprefeitura ou órgão fiscalizador e outra para você manter em seus arquivos.",
+                "Com laudos técnicos especializados, atestamos a conformidade de máquinas, equipamentos e processos, assegurando segurança e atendimento às normas.",
             },
             {
               title: "Relatório de melhorias",
@@ -78,12 +78,12 @@ export const servicesData: Record<string, ServiceArticle> = {
         {
           title: "A IMPORTÂNCIA DO LAUDO TÉCNICO PARA PLAYGROUNDS",
           content:
-            "O laudo técnico é essencial porque garante conformidade legal com a legislação brasileira, sendo obrigatório para o funcionamento do playground em muitos municípios. Além disso, assegura a segurança das crianças, confirmando que o equipamento está em boas condições de uso e livre de riscos. É necessário renovar o laudo periodicamente (geralmente a cada 6 meses ou conforme exigência local) e deve ser assinado por um engenheiro registrado no CREA para manter a validade e a segurança contínua. Sem o laudo técnico adequado, você corre riscos de multas, interdição do playground e, principalmente, acidentes que podem comprometer a segurança das crianças.",
+            "O laudo técnico é essencial para garantir a conformidade legal com a legislação brasileira e o atendimento às normas técnicas aplicáveis, sendo frequentemente exigido por órgãos fiscalizadores e legislações municipais para o funcionamento de playgrounds. Além disso, assegura a segurança das crianças, confirmando que o equipamento está em boas condições de uso e livre de riscos. É necessário renovar o laudo periodicamente (geralmente a cada 6 meses ou conforme exigência local) e deve ser assinado por um engenheiro registrado no CREA para manter a validade e a segurança contínua. Sem o laudo técnico adequado, você corre riscos de multas, interdição do playground e, principalmente, acidentes que podem comprometer a segurança das crianças.",
         },
         {
           title: "BENEFÍCIOS DE MANTER O LAUDO TÉCNICO ATUALIZADO",
           content:
-            "Manter o laudo técnico atualizado traz diversos benefícios: evita multas ao garantir que você está em conformidade com as exigências legais dos órgãos fiscalizadores; aumenta a segurança ao proteger as crianças e melhorar a confiança dos pais e responsáveis; facilita inspeções, tornando auditorias e verificações mais simples e rápidas; valoriza o empreendimento ao demonstrar compromisso com a segurança; previne acidentes através da identificação precoce de problemas e riscos; e garante tranquilidade ao saber que o playground está em conformidade com todas as normas técnicas vigentes.",
+            "Manter o laudo técnico atualizado traz diversos benefícios: evita multas ao garantir que você está em conformidade com as exigências legais dos órgãos fiscalizadores, aumenta a segurança ao proteger as crianças e melhorar a confiança dos pais e responsáveis, facilita inspeções, tornando auditorias e verificações mais simples e rápidas, valoriza o empreendimento ao demonstrar compromisso com a segurança, previne acidentes através da identificação precoce de problemas e riscos, e garante tranquilidade ao saber que o playground está em conformidade com todas as normas técnicas vigentes.",
         },
         {
           title: "NOSSOS SERVIÇOS DE VISTORIA E LAUDO TÉCNICO",
@@ -192,7 +192,7 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Encadernação",
               description:
-                "Encadernamos duas vias do laudo (uma para você e outra para órgão fiscalizador).",
+                "Encadernamos duas vias do laudo (uma para você e outra para órgão fiscalizador). (Se necessário)",
             },
             {
               title: "Entrega",
@@ -234,12 +234,12 @@ export const servicesData: Record<string, ServiceArticle> = {
     images: [],
     content: {
       introduction:
-        "PRECISA ELABORAR OU RENOVAR O PMOC DO SEU SISTEMA DE AR CONDICIONADO? A ÍTRIO Engenharia elabora PMOC completo (Plano de Manutenção, Operação e Controle) para sistemas de climatização, realiza inspeções periódicas e emite laudos técnicos, garantindo conformidade com a Resolução ANVISA RDC 09/2003 e qualidade do ar interno. Especialistas em PMOC para empresas, clínicas, hospitais, shoppings e estabelecimentos comerciais. Atendimento ágil e suporte completo até a emissão do laudo técnico e relatório de conformidade, sem complicações.",
+        "PRECISA ELABORAR OU RENOVAR O PMOC DO SEU SISTEMA DE AR CONDICIONADO? A ÍTRIO Engenharia elabora PMOC completo (Plano de Manutenção, Operação e Controle) para sistemas de climatização, realiza inspeções periódicas e emite laudos técnicos, garantindo conformidade com a NBR 17037:2023 e LEI N° 13.589 e qualidade do ar interno. Especialistas em PMOC para empresas, clínicas, hospitais, shoppings e estabelecimentos comerciais. Atendimento ágil e suporte completo até a emissão do laudo técnico e relatório de conformidade, sem complicações.",
       sections: [
         {
-          title: "O QUE É PMOC E POR QUE É OBRIGATÓRIO?",
+          title: "O que é PMOC e quando é obrigatório?",
           content:
-            "O PMOC é um documento técnico obrigatório estabelecido pela Resolução ANVISA RDC 09/2003, que define as diretrizes para manutenção, operação e controle de sistemas de climatização. É essencial para garantir a qualidade do ar interno e prevenir problemas de saúde relacionados à má qualidade do ar, como síndrome do edifício doente, alergias respiratórias e transmissão de doenças. O PMOC é obrigatório para todos os estabelecimentos que possuem sistemas de ar condicionado central, incluindo empresas, clínicas, hospitais, shoppings, hotéis, restaurantes e demais locais de uso público ou coletivo. Sem o PMOC adequado, sua empresa corre riscos de multas, interdição e problemas de saúde para funcionários e clientes.",
+            "O PMOC é um documento técnico obrigatório estabelecido pela NBR 17037:2023 e LEI N° 13.589, que define as diretrizes para manutenção, operação e controle de sistemas de climatização. É essencial para garantir a qualidade do ar interno e prevenir problemas de saúde relacionados à má qualidade do ar, como síndrome do edifício doente, alergias respiratórias e transmissão de doenças. O PMOC é obrigatório para todos os estabelecimentos que possuam sistemas de climatização acima de 60.000BTU/h, isto é, empresas em geral, clínicas, hospitais, shoppings, hotéis, restaurantes, e demais locais de uso público ou coletivo. Sem o PMOC adequado, sua empresa corre riscos de multas, interdição e problemas de saúde para funcionários e clientes.",
         },
         {
           title: "O QUE ESTÁ INCLUÍDO NO NOSSO SERVIÇO DE PMOC",
@@ -265,7 +265,8 @@ export const servicesData: Record<string, ServiceArticle> = {
             },
             {
               title: "Laudos técnicos",
-              description: "Laudos técnicos de qualidade do ar interno.",
+              description:
+                "Laudos técnicos a fim de verificar a integridade dos equipamentos.",
             },
             {
               title: "Relatórios de conformidade",
@@ -282,7 +283,7 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Suporte técnico contínuo",
               description:
-                "Suporte técnico contínuo. Toda a documentação é elaborada seguindo rigorosamente a RDC 09/2003 da ANVISA e demais normas aplicáveis.",
+                "Toda a documentação é elaborada seguindo rigorosamente a legislação e normas técnicas vigentes.",
             },
           ],
         },
@@ -292,51 +293,45 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Melhor qualidade do ar interno",
               description:
-                "Melhor qualidade do ar interno, reduzindo problemas de saúde e aumentando o bem-estar.",
+                "Reduzindo problemas de saúde e aumentando o bem-estar.",
             },
             {
               title: "Redução de custos",
               description:
-                "Redução de custos com manutenção corretiva através de manutenção preventiva adequada.",
+                "Com manutenção corretiva através de manutenção preventiva adequada.",
             },
             {
               title: "Conformidade legal",
               description:
-                "Conformidade legal, evitando multas e autuações da ANVISA e órgãos fiscalizadores.",
+                "Evitando multas e autuações da ANVISA e órgãos fiscalizadores.",
             },
             {
               title: "Prevenção de problemas de saúde",
-              description:
-                "Prevenção de problemas de saúde relacionados à má qualidade do ar.",
+              description: "Relacionados à má qualidade do ar.",
             },
             {
               title: "Maior eficiência energética",
               description:
-                "Maior eficiência energética dos sistemas de climatização, reduzindo custos operacionais.",
+                "Dos sistemas de climatização, reduzindo custos operacionais.",
             },
             {
               title: "Aumento da vida útil dos equipamentos",
-              description: "Aumento da vida útil dos equipamentos.",
+              description: "",
             },
             {
               title: "Tranquilidade",
               description:
-                "Tranquilidade ao saber que está em conformidade com a legislação.",
+                "Ao saber que está em conformidade com a legislação.",
             },
             {
               title: "Valorização do estabelecimento",
-              description:
-                "Valorização do estabelecimento ao demonstrar compromisso com a saúde e segurança.",
+              description: "Ao demonstrar compromisso com a saúde e segurança.",
             },
           ],
         },
         {
           title: "NOSSOS SERVIÇOS DE PMOC COMPLETOS",
           items: [
-            {
-              title: "Cadastro técnico detalhado",
-              description: "Cadastro técnico detalhado do sistema.",
-            },
             {
               title: "Plano de manutenção preventiva",
               description:
@@ -354,7 +349,8 @@ export const servicesData: Record<string, ServiceArticle> = {
             },
             {
               title: "Laudos técnicos",
-              description: "Laudos técnicos de qualidade do ar interno.",
+              description:
+                "Laudos técnicos a fim de verificar a integridade dos equipamentos.",
             },
             {
               title: "Relatórios de conformidade",
@@ -422,7 +418,7 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Entre outros",
               description:
-                "Atendemos entre outros estabelecimentos: qualquer local que possua sistema de ar condicionado central e precise de PMOC. Para cada tipo de estabelecimento, adaptamos o PMOC às necessidades específicas e garantimos total conformidade.",
+                "Atendemos entre outros estabelecimentos: qualquer local que possua sistema de ar condicionado e precise de PMOC. Para cada tipo de estabelecimento, adaptamos o PMOC às necessidades específicas e garantimos total conformidade.",
             },
           ],
         },
@@ -451,7 +447,8 @@ export const servicesData: Record<string, ServiceArticle> = {
             },
             {
               title: "Laudos técnicos",
-              description: "Emitimos laudos técnicos de qualidade do ar.",
+              description:
+                "Emitimos laudos técnicos para verificar a integridade dos equipamentos.",
             },
             {
               title: "Relatórios",

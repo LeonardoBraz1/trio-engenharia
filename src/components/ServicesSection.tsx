@@ -1,5 +1,5 @@
 import {
-  Gamepad2,
+  ToyBrick,
   Wind,
   Cog,
   Truck,
@@ -8,6 +8,7 @@ import {
   FileCheck,
   Accessibility,
   ArrowRight,
+  ArrowUpDown,
   ChefHat,
   Scale,
   UserCog,
@@ -29,7 +30,7 @@ const ServicesSection = () => {
   const initialDisplayCount = 6;
   const services = [
     {
-      icon: Gamepad2,
+      icon: ToyBrick,
       title: "Brinquedos para Playground",
       description:
         "Vistorias, adequações e laudos de segurança para playgrounds.",
@@ -73,7 +74,7 @@ const ServicesSection = () => {
       slug: "laudo-tecnico-art",
     },
     {
-      icon: Accessibility,
+      icon: [ArrowUpDown, Accessibility],
       title: "Elevadores e Plataformas",
       description: "Inspeções e laudos conforme normas de acessibilidade.",
       slug: "elevadores-plataformas",
@@ -171,8 +172,17 @@ const ServicesSection = () => {
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-accent/0 group-hover:from-primary/5 group-hover:via-primary/3 group-hover:to-accent/5 transition-all duration-500 rounded-xl sm:rounded-2xl" />
 
                     <div className="relative z-10">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center mb-5 sm:mb-6 group-hover:from-primary/20 group-hover:to-accent/20 group-hover:scale-110 transition-all duration-500 shadow-sm group-hover:shadow-md">
-                        <service.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary group-hover:text-accent transition-all duration-500 group-hover:scale-110" />
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center mb-5 sm:mb-6 group-hover:from-primary/20 group-hover:to-accent/20 group-hover:scale-110 transition-all duration-500 shadow-sm group-hover:shadow-md gap-1">
+                        {Array.isArray(service.icon) ? (
+                          service.icon.map((Icon, idx) => (
+                            <Icon
+                              key={idx}
+                              className="w-7 h-7 sm:w-9 sm:h-9 text-primary group-hover:text-accent transition-all duration-500 group-hover:scale-110"
+                            />
+                          ))
+                        ) : (
+                          <service.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary group-hover:text-accent transition-all duration-500 group-hover:scale-110" />
+                        )}
                       </div>
 
                       <h3 className="font-heading font-semibold text-lg sm:text-xl md:text-2xl text-foreground mb-3 sm:mb-4 group-hover:text-primary transition-colors duration-300 leading-tight">

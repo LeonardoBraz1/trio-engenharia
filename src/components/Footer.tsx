@@ -63,9 +63,6 @@ const Footer = () => {
               Engenharia com precisão, confiança e resultados. Soluções técnicas
               para seu negócio.
             </p>
-            <p className="text-background/50 text-[10px] sm:text-xs">
-              CNPJ: XX.XXX.XXX/0001-XX
-            </p>
           </div>
 
           {/* Quick Links */}

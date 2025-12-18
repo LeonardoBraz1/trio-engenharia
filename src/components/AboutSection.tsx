@@ -23,7 +23,9 @@ const AboutSection = () => {
             <div className="relative">
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-float">
                 <img
-                  src={aboutImage}
+                  src={
+                    "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg"
+                  }
                   alt="Engenheira analisando equipamentos industriais"
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                 />
