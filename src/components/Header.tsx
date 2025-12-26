@@ -23,6 +23,7 @@ const Header = () => {
     { label: "Início", href: "#inicio" },
     { label: "Sobre", href: "#sobre" },
     { label: "Serviços", href: "#servicos" },
+    { label: "Depoimentos", href: "#depoimentos" },
     { label: "Blog", href: "/blog", isRoute: true },
     { label: "Contato", href: "#contato" },
   ] as const;
@@ -130,7 +131,8 @@ const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => {
-              const isRoute = (item as any).isRoute || item.href.startsWith("/");
+              const isRoute =
+                (item as any).isRoute || item.href.startsWith("/");
               const isAnchor = item.href.startsWith("#");
 
               if (isRoute) {
@@ -204,7 +206,8 @@ const Header = () => {
           <div className="md:hidden bg-card/98 backdrop-blur-lg rounded-b-2xl shadow-float pb-6 animate-fade-in">
             <div className="flex flex-col gap-4 px-4">
               {navItems.map((item) => {
-                const isRoute = (item as any).isRoute || item.href.startsWith("/");
+                const isRoute =
+                  (item as any).isRoute || item.href.startsWith("/");
                 const isAnchor = item.href.startsWith("#");
 
                 if (isRoute) {

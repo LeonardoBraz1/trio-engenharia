@@ -3,10 +3,17 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import {
   getArticleBySlug,
   getAllArticles,
-  getRelatedArticles,
+  getServiceSlugByArticleSlug,
 } from "@/data/articles";
+import { getServiceBySlug } from "@/data/services";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import { ArrowLeft, Calendar, User, ArrowRight, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -26,8 +33,10 @@ const BlogArticle = () => {
       : null;
   const prevArticle = currentIndex > 0 ? allArticles[currentIndex - 1] : null;
 
-  const relatedArticles = useMemo(() => {
-    return article ? getRelatedArticles(article.slug, 3) : [];
+  const relatedService = useMemo(() => {
+    if (!article) return undefined;
+    const serviceSlug = getServiceSlugByArticleSlug(article.slug);
+    return serviceSlug ? getServiceBySlug(serviceSlug) : undefined;
   }, [article]);
 
   const readingTime = useMemo(() => {
@@ -221,15 +230,6 @@ const BlogArticle = () => {
         },
       };
 
-      if (relatedArticles.length > 0) {
-        const relatedLinks = relatedArticles.map((related) => ({
-          "@type": "BlogPosting" as const,
-          headline: related.title,
-          url: `${baseUrl}/trio-engenharia/blog/${related.slug}`,
-        }));
-        Object.assign(schema, { relatedLink: relatedLinks });
-      }
-
       const script = document.createElement("script");
       script.id = "article-schema";
       script.type = "application/ld+json";
@@ -335,7 +335,7 @@ const BlogArticle = () => {
       }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [article, slug]);
+  }, [article, slug, relatedService]);
 
   if (!article) {
     return (
@@ -495,40 +495,45 @@ const BlogArticle = () => {
               </CardContent>
             </Card>
 
-            {relatedArticles.length > 0 && (
-              <div className="mb-8 sm:mb-12">
-                <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-6">
-                  Artigos Relacionados
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-                  {relatedArticles.map((related) => (
-                    <Link
-                      key={related.slug}
-                      to={`/blog/${related.slug}`}
-                      className="group"
-                    >
-                      <Card className="h-full hover:shadow-lg transition-all hover:border-primary/50">
-                        <div className="relative w-full h-[150px] overflow-hidden rounded-t-lg">
-                          <img
-                            src={related.image}
-                            alt={related.title}
-                            loading="lazy"
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                          />
+            {relatedService && (
+              <Card className="border-primary/20 mb-8 sm:mb-12">
+                <CardHeader>
+                  <CardTitle className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-2">
+                    Serviço Relacionado
+                  </CardTitle>
+                  <CardDescription className="text-base sm:text-lg">
+                    Oferecemos este serviço com qualidade e expertise técnica
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Link
+                    to={`/servicos/${relatedService.slug}`}
+                    className="group block"
+                  >
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center">
+                      <div className="relative w-full sm:w-[250px] h-[200px] rounded-lg overflow-hidden flex-shrink-0">
+                        <img
+                          src={relatedService.heroImage}
+                          alt={relatedService.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-xl sm:text-2xl font-heading font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                          {relatedService.title}
+                        </h3>
+                        <p className="text-muted-foreground mb-4 leading-relaxed">
+                          {relatedService.metaDescription}
+                        </p>
+                        <div className="flex items-center text-primary font-medium group-hover:gap-2 transition-all">
+                          <span>Ver detalhes do serviço</span>
+                          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                         </div>
-                        <CardContent className="pt-4">
-                          <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2 mb-2">
-                            {related.title}
-                          </h3>
-                          <p className="text-sm text-muted-foreground line-clamp-2">
-                            {related.excerpt}
-                          </p>
-                        </CardContent>
-                      </Card>
-                    </Link>
-                  ))}
-                </div>
-              </div>
+                      </div>
+                    </div>
+                  </Link>
+                </CardContent>
+              </Card>
             )}
 
             <div className="flex flex-col sm:flex-row justify-between gap-4 pt-8 border-t">

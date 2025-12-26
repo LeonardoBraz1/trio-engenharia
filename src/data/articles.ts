@@ -954,3 +954,44 @@ export const getRelatedArticles = (
 
   return related;
 };
+
+const serviceToArticleMap: Record<string, string> = {
+  "ar-condicionado-pmoc": "pmoc-empresas-obrigadas-vigilancia-sanitaria",
+  "nr13-vasos-pressao": "nr-13-laudo-vaso-pressao-obrigatorio",
+  "engenheiro-rt-empresas": "responsavel-tecnico-empresa-obrigada-engenheiro",
+  "maquinas-nr12": "nr-12-adequacao-maquinas-obrigatoria-riscos-legais",
+  "brinquedos-playground": "laudo-tecnico-playground-responsavel-acidente",
+  "exaustao-cozinhas":
+    "sistema-exaustao-cozinhas-industriais-laudo-obrigatorio",
+  "nr11-sistemas-transportadores":
+    "nr-11-laudo-sistemas-transportadores-obrigatorio",
+  "maquinas-pesadas": "laudo-tecnico-maquinas-pesadas-exigido",
+  "elevadores-plataformas":
+    "laudo-tecnico-elevadores-plataformas-acessibilidade-exigido",
+  andaimes: "laudo-tecnico-andaimes-exigencias-seguranca-responsabilidades",
+  "reclassificacao-monta":
+    "reclassificacao-monta-obrigatoria-quem-pode-realizar",
+  "pericias-assistente-tecnico":
+    "pericia-tecnica-assistente-tecnico-diferenca-quando-contratar",
+  "engenheiro-rt-desmanches":
+    "engenheiro-responsavel-tecnico-desmanches-exigencia-legal",
+  projetos: "projetos-mecanicos-obrigatorios-importancia",
+  "avcb-clcb-bombeiros": "avcb-clcb-documentos-tecnicos-corpo-bombeiros",
+};
+
+export const getArticleByServiceSlug = (
+  serviceSlug: string
+): Article | undefined => {
+  const articleSlug = serviceToArticleMap[serviceSlug];
+  if (!articleSlug) return undefined;
+  return getArticleBySlug(articleSlug);
+};
+
+export const getServiceSlugByArticleSlug = (
+  articleSlug: string
+): string | undefined => {
+  const entry = Object.entries(serviceToArticleMap).find(
+    ([, articleSlugValue]) => articleSlugValue === articleSlug
+  );
+  return entry ? entry[0] : undefined;
+};

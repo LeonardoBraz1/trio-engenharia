@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { getServiceBySlug } from "@/data/services";
+import { getArticleByServiceSlug } from "@/data/articles";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -29,6 +30,7 @@ const ServiceArticle = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const service = slug ? getServiceBySlug(slug) : undefined;
+  const relatedArticle = slug ? getArticleByServiceSlug(slug) : undefined;
 
   const handleBackToServices = () => {
     navigate("/#servicos");
@@ -796,6 +798,44 @@ const ServiceArticle = () => {
                 </a>
               </CardContent>
             </Card>
+
+            {relatedArticle && (
+              <Card className="border-primary/20 mt-8 sm:mt-12">
+                <CardHeader>
+                  <CardTitle className="text-xl sm:text-2xl font-heading font-bold text-foreground mb-2">
+                    Artigo Relacionado
+                  </CardTitle>
+                  <CardDescription>
+                    Leia mais sobre este assunto em nosso blog
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Link to={`/blog/${relatedArticle.slug}`} className="group">
+                    <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                      <div className="relative w-full sm:w-[200px] h-[150px] rounded-lg overflow-hidden flex-shrink-0">
+                        <img
+                          src={relatedArticle.image}
+                          alt={relatedArticle.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-lg sm:text-xl font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                          {relatedArticle.title}
+                        </h3>
+                        <p className="text-muted-foreground mb-4 line-clamp-2">
+                          {relatedArticle.excerpt}
+                        </p>
+                        <div className="flex items-center text-primary font-medium group-hover:gap-2 transition-all">
+                          <span>Ler artigo completo</span>
+                          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </CardContent>
+              </Card>
+            )}
           </div>
         </div>
       </article>
