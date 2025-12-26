@@ -102,14 +102,14 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-visible ${
         isScrolled
           ? "bg-card/95 backdrop-blur-md shadow-elevated"
           : "bg-transparent"
       }`}
     >
-      <div className="section-container">
-        <nav className="flex items-center justify-between h-20">
+      <div className="section-container overflow-visible">
+        <nav className="flex items-center justify-between h-16 sm:h-20 min-h-[64px] sm:min-h-[80px]">
           {/* Logo */}
           <a
             href={isServicePage ? `${import.meta.env.BASE_URL}` : "#inicio"}
@@ -119,12 +119,12 @@ const Header = () => {
                 navigate("/");
               }
             }}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 flex-shrink-0 max-w-[60%] sm:max-w-none"
           >
             <img
               src={logoSource}
               alt="ÍTRIO Engenharia"
-              className="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto"
+              className="h-8 sm:h-10 md:h-12 lg:h-16 xl:h-20 w-auto"
             />
           </a>
 
@@ -190,11 +190,14 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 flex-shrink-0 z-50 relative"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className={`w-6 h-6 ${textColor}`} />
+              <X
+                className={`w-6 h-6 ${isScrolled ? textColor : "text-white"}`}
+              />
             ) : (
               <Menu className={`w-6 h-6 ${textColor}`} />
             )}
@@ -203,12 +206,17 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-card/98 backdrop-blur-lg rounded-b-2xl shadow-float pb-6 animate-fade-in">
+          <div
+            className={`md:hidden ${
+              isScrolled ? "bg-card/98" : "bg-card/98 backdrop-blur-lg"
+            } rounded-b-2xl shadow-float pb-6 animate-fade-in`}
+          >
             <div className="flex flex-col gap-4 px-4">
               {navItems.map((item) => {
                 const isRoute =
                   (item as any).isRoute || item.href.startsWith("/");
                 const isAnchor = item.href.startsWith("#");
+                const mobileTextColor = isScrolled ? textColor : "text-white";
 
                 if (isRoute) {
                   return (
@@ -219,7 +227,7 @@ const Header = () => {
                         navigate(item.href);
                         setIsMobileMenuOpen(false);
                       }}
-                      className="text-foreground font-medium py-2 hover:text-accent transition-colors text-left"
+                      className={`${mobileTextColor} font-medium py-2 hover:text-accent transition-colors text-left`}
                     >
                       {item.label}
                     </button>
@@ -247,7 +255,7 @@ const Header = () => {
                         handleSmoothScroll(e, item.href);
                       }
                     }}
-                    className="text-foreground font-medium py-2 hover:text-accent transition-colors"
+                    className={`${mobileTextColor} font-medium py-2 hover:text-accent transition-colors`}
                   >
                     {item.label}
                   </a>

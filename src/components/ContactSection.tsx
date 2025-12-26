@@ -22,9 +22,12 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contato" className="py-16 sm:py-20 lg:py-24 bg-background">
-      <div className="section-container">
-        <div className="max-w-4xl mx-auto">
+    <section
+      id="contato"
+      className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background w-full"
+    >
+      <div className="section-container w-full">
+        <div className="max-w-4xl mx-auto w-full">
           {/* Header */}
           <ScrollAnimation
             animation="fade-up"
@@ -44,8 +47,8 @@ const ContactSection = () => {
 
           {/* Contact Card */}
           <ScrollAnimation animation="scale" delay={200}>
-            <div className="bg-card rounded-xl sm:rounded-2xl shadow-float border border-border/50 overflow-hidden">
-              <div className="grid md:grid-cols-2">
+            <div className="bg-card rounded-xl sm:rounded-2xl shadow-float border border-border/50 overflow-hidden w-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 w-full">
                 {/* Left - CTA */}
                 <div
                   className="p-6 sm:p-10 md:p-12"

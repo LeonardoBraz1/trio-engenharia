@@ -44,8 +44,8 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-background">
-      <div className="section-container">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background w-full">
+      <div className="section-container w-full">
         <ScrollAnimation
           animation="fade-up"
           className="text-center max-w-2xl mx-auto mb-10 sm:mb-16"

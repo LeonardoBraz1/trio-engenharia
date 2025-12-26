@@ -139,8 +139,11 @@ const ServicesSection = () => {
     "https://wa.me/5511914953344?text=Olá! Gostaria de saber mais sobre os serviços.";
 
   return (
-    <section id="servicos" className="py-16 sm:py-20 lg:py-24 bg-muted/50">
-      <div className="section-container">
+    <section
+      id="servicos"
+      className="py-12 sm:py-16 md:py-20 lg:py-24 bg-muted/50"
+    >
+      <div className="section-container w-full">
         {/* Header */}
         <ScrollAnimation
           animation="fade-up"
@@ -162,7 +165,7 @@ const ServicesSection = () => {
         </ScrollAnimation>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-full">
           {services
             .slice(0, showAll ? services.length : initialDisplayCount)
             .map((service, index) => (

@@ -11,31 +11,36 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="sobre" className="py-16 sm:py-20 lg:py-24 bg-background">
-      <div className="section-container">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <section
+      id="sobre"
+      className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background w-full"
+    >
+      <div className="section-container w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center w-full">
           {/* Image */}
           <ScrollAnimation
             animation="slide-left"
             delay={100}
             className="order-2 lg:order-1"
           >
-            <div className="relative">
-              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-float">
+            <div className="relative w-full">
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-float w-full">
                 <img
                   src={
                     "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg"
                   }
                   alt="Engenheira analisando equipamentos industriais"
-                  className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
+                  className="w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px] object-cover"
+                  loading="lazy"
                 />
                 {/* Overlay Card */}
-                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-card/95 backdrop-blur-md rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-elevated">
-                  <div className="flex items-center gap-3 sm:gap-4">
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 md:bottom-6 md:left-6 md:right-6 bg-card/95 backdrop-blur-md rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 shadow-elevated">
+                  <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
                     <img
                       src={`${import.meta.env.BASE_URL}azul.png`}
                       alt="ÍTRIO Engenharia"
-                      className="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto"
+                      className="h-8 sm:h-10 md:h-12 lg:h-16 xl:h-20 w-auto flex-shrink-0"
+                      loading="lazy"
                     />
                     <div>
                       <p className="font-heading font-semibold text-foreground text-sm sm:text-base">
@@ -63,11 +68,11 @@ const AboutSection = () => {
             <span className="inline-block text-accent font-semibold text-xs sm:text-sm tracking-wider uppercase mb-3 sm:mb-4">
               Sobre Nós
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-foreground mb-4 sm:mb-6 leading-tight">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-heading font-bold text-foreground mb-4 sm:mb-6 leading-tight">
               Excelência técnica com responsabilidade e confiança
             </h2>
 
-            <div className="space-y-3 sm:space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed mb-6 sm:mb-8">
+            <div className="space-y-3 sm:space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 max-w-full">
               <p>
                 A <strong className="text-foreground">Ítrio Engenharia</strong>{" "}
                 atua no desenvolvimento de soluções em engenharia mecânica,

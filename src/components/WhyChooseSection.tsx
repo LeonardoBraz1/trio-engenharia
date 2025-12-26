@@ -49,16 +49,16 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-muted/30">
-      <div className="section-container">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-muted/30 w-full">
+      <div className="section-container w-full">
         <ScrollAnimation
           animation="fade-up"
-          className="text-center max-w-2xl mx-auto mb-10 sm:mb-16"
+          className="text-center max-w-2xl mx-auto mb-8 sm:mb-12 md:mb-16"
         >
           <span className="inline-block text-accent font-semibold text-xs sm:text-sm tracking-wider uppercase mb-3 sm:mb-4">
             Por Que Escolher a ÍTRIO
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-foreground mb-4 sm:mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-foreground mb-4 sm:mb-6">
             Por que escolher a ÍTRIO Engenharia?
           </h2>
           <p className="text-muted-foreground leading-relaxed text-sm sm:text-base px-4 sm:px-0">
@@ -69,30 +69,30 @@ const WhyChooseSection = () => {
           </p>
         </ScrollAnimation>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-0">
+        <div className="max-w-4xl mx-auto w-full">
+          <div className="space-y-0 w-full">
             {benefits.map((benefit, index) => (
               <ScrollAnimation
                 key={index}
                 animation="slide-right"
                 delay={50 * index}
               >
-                <div className="relative flex items-start gap-6 sm:gap-8 p-6 sm:p-8 group hover:bg-card/50 rounded-xl transition-all duration-300">
+                <div className="relative flex flex-col sm:flex-row items-start gap-3 sm:gap-4 md:gap-5 lg:gap-6 p-4 sm:p-5 md:p-6 lg:p-8 group hover:bg-card/50 rounded-xl transition-all duration-300 w-full">
                   {index < benefits.length - 1 && (
-                    <div className="absolute left-8 sm:left-10 top-20 sm:top-24 bottom-0 w-0.5 bg-border" />
+                    <div className="absolute left-6 sm:left-7 md:left-8 lg:left-10 top-14 sm:top-16 md:top-20 lg:top-24 bottom-0 w-0.5 bg-border hidden sm:block" />
                   )}
 
                   <div className="relative z-10 flex-shrink-0">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary via-primary/90 to-primary/70 rounded-full flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">
-                      <benefit.icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary-foreground" />
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-primary via-primary/90 to-primary/70 rounded-full flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">
+                      <benefit.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-foreground" />
                     </div>
                   </div>
 
-                  <div className="flex-1 pt-1">
-                    <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-primary mb-2 sm:mb-3 group-hover:text-primary/80 transition-colors duration-300">
+                  <div className="flex-1 pt-0 sm:pt-1 min-w-0">
+                    <h3 className="font-heading font-bold text-base sm:text-lg md:text-xl lg:text-2xl text-primary mb-2 sm:mb-3 group-hover:text-primary/80 transition-colors duration-300">
                       {benefit.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
+                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed break-words">
                       {benefit.description}
                     </p>
                   </div>

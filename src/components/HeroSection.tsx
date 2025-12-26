@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative min-h-[calc(100vh-80px)] sm:min-h-screen flex items-center overflow-hidden"
     >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
@@ -29,7 +29,7 @@ const HeroSection = () => {
       <div className="absolute bottom-20 left-5 md:left-10 w-64 md:w-96 h-64 md:h-96 bg-primary-foreground/5 rounded-full blur-3xl" />
 
       {/* Content */}
-      <div className="relative z-10 section-container py-24 sm:py-32 md:py-40">
+      <div className="relative z-10 section-container py-16 sm:py-24 md:py-32 lg:py-40">
         <div className="max-w-3xl">
           {/* Badge */}
           <div

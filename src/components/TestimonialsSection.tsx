@@ -162,9 +162,9 @@ const TestimonialsSection = () => {
   return (
     <section
       id="depoimentos"
-      className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-background to-muted/20"
+      className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-background to-muted/20 w-full overflow-hidden"
     >
-      <div className="section-container">
+      <div className="section-container w-full">
         <ScrollAnimation animation="fade-up">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-foreground mb-4 sm:mb-6">
@@ -193,15 +193,15 @@ const TestimonialsSection = () => {
         </ScrollAnimation>
 
         {/* Carrossel horizontal com scroll automático */}
-        <div className="relative">
+        <div className="relative w-full overflow-hidden">
           <div
             ref={scrollContainerRef}
-            className="flex gap-4 overflow-x-auto scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] cursor-grab select-none"
+            className="flex gap-3 sm:gap-4 overflow-x-auto scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] cursor-grab select-none"
             style={{ userSelect: "none" }}
           >
             <div
               ref={scrollContentRef}
-              className="flex gap-4"
+              className="flex gap-3 sm:gap-4"
               style={{ minWidth: "max-content" }}
             >
               {testimonials.map((testimonial) => {
@@ -211,7 +211,7 @@ const TestimonialsSection = () => {
                 return (
                   <Card
                     key={testimonial.id}
-                    className="flex-shrink-0 w-[350px] sm:w-[400px] bg-card hover:shadow-lg transition-shadow border"
+                    className="flex-shrink-0 w-[280px] xs:w-[320px] sm:w-[350px] md:w-[380px] lg:w-[400px] bg-card hover:shadow-lg transition-shadow border"
                   >
                     <div className="p-6 relative">
                       {/* Logo do Google no canto superior direito */}
