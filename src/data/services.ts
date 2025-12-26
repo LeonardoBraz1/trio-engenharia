@@ -493,7 +493,7 @@ export const servicesData: Record<string, ServiceArticle> = {
     images: [],
     content: {
       introduction:
-        "PRECISA ADEQUAR SUAS MÁQUINAS À NR12 COM URGÊNCIA? A ÍTRIO Engenharia realiza adequação completa de máquinas e equipamentos conforme NR12, incluindo instalação de proteções, dispositivos de segurança, sinalização adequada, vistoria técnica detalhada e emissão de laudo técnico com ART. Especialistas em segurança de máquinas e equipamentos industriais. Atendimento ágil e suporte completo até a emissão do laudo técnico e relatório de conformidade, sem complicações. Para indústrias, oficinas, fábricas e empresas que utilizam máquinas e equipamentos.",
+        "PRECISA ADEQUAR SUAS MÁQUINAS À NR12 COM URGÊNCIA? A ÍTRIO Engenharia realiza adequação completa de máquinas e equipamentos conforme NR12, incluindo instalação de proteções, dispositivos de segurança, sinalização adequada, vistoria técnica detalhada e emissão de laudo técnico com ART. Especialistas em segurança de máquinas e equipamentos industriais. Atendimento ágil e suporte completo até a emissão do laudo técnico e relatório de conformidade, sem complicações. Para indústrias dos mais diversos segmentos que utilizem qualquer tipo de máquinas e equipamentos.",
       sections: [
         {
           title: "O QUE É A NR12 E POR QUE É OBRIGATÓRIA?",
@@ -554,92 +554,41 @@ export const servicesData: Record<string, ServiceArticle> = {
           ],
         },
         {
-          title: "NOSSOS SERVIÇOS DE ADEQUAÇÃO E VISTORIA NR12",
-          items: [
-            {
-              title: "Instalação de proteções",
-              description:
-                "Instalação de proteções fixas e móveis para pontos de perigo.",
-            },
-            {
-              title: "Dispositivos de segurança",
-              description:
-                "Instalação de dispositivos de segurança como sensores, cortinas de luz e paradas de emergência.",
-            },
-            {
-              title: "Sinalização adequada",
-              description:
-                "Sinalização adequada com placas de advertência e orientação.",
-            },
-            {
-              title: "Procedimentos de trabalho seguro",
-              description: "Elaboração de procedimentos de trabalho seguro.",
-            },
-            {
-              title: "Vistoria técnica",
-              description: "Vistoria técnica detalhada de todas as máquinas.",
-            },
-            {
-              title: "Análise de riscos",
-              description: "Análise de riscos completa.",
-            },
-            {
-              title: "Laudo técnico",
-              description:
-                "Emissão de laudo técnico com todas as constatações.",
-            },
-            {
-              title: "Emissão de ART",
-              description: "Emissão de ART junto ao CREA.",
-            },
-            {
-              title: "Treinamento",
-              description: "Treinamento de operadores quando necessário.",
-            },
-            {
-              title: "Orientações",
-              description:
-                "Orientações para manutenção preventiva. Também oferecemos serviços de renovação de laudos e readequação quando necessário.",
-            },
-          ],
-        },
-        {
           title: "BENEFÍCIOS DA ADEQUAÇÃO NR12",
           items: [
             {
               title: "Previne acidentes",
               description:
-                "Previne acidentes de trabalho, garantindo a segurança dos trabalhadores e evitando lesões graves ou fatais.",
+                "De trabalho, garantindo a segurança dos trabalhadores e evitando lesões graves ou fatais.",
             },
             {
               title: "Evita multas",
               description:
-                "Evita multas e autuações trabalhistas do Ministério do Trabalho, mantendo sua empresa em conformidade com a legislação.",
+                "E autuações trabalhistas do Ministério do Trabalho, mantendo sua empresa em conformidade com a legislação.",
             },
             {
               title: "Reduz riscos",
               description:
-                "Reduz riscos de responsabilidade civil e criminal em caso de acidentes.",
+                "De responsabilidade civil e criminal em caso de acidentes.",
             },
             {
               title: "Aumenta a produtividade",
               description:
-                "Aumenta a produtividade ao criar um ambiente de trabalho mais seguro e confiável.",
+                "Ao criar um ambiente de trabalho mais seguro e confiável.",
             },
             {
               title: "Melhora a imagem",
               description:
-                "Melhora a imagem da empresa ao demonstrar compromisso com a segurança.",
+                "Da empresa ao demonstrar compromisso com a segurança.",
             },
             {
               title: "Reduz custos",
-              description:
-                "Reduz custos com afastamentos e indenizações por acidentes.",
+              description: "Com afastamentos e indenizações por acidentes.",
             },
             {
               title: "Garante tranquilidade",
               description:
-                "Garante tranquilidade ao saber que está em conformidade com todas as exigências legais.",
+                "Ao saber que está em conformidade com todas as exigências legais.",
             },
           ],
         },
@@ -833,70 +782,36 @@ export const servicesData: Record<string, ServiceArticle> = {
           ],
         },
         {
-          title: "NOSSOS SERVIÇOS DE VISTORIA E ADEQUAÇÃO NR11",
-          items: [
-            {
-              title: "Avaliação de sistemas transportadores",
-              description:
-                "Avaliação completa de sistemas transportadores, verificando condições de segurança, estruturas, sistemas de elevação, cabos, ganchos, freios e dispositivos de segurança.",
-            },
-            {
-              title: "Adequações",
-              description:
-                "Adequações necessárias quando aplicável, incluindo instalação de dispositivos de segurança, sinalização adequada e correções estruturais.",
-            },
-            {
-              title: "Vistoria técnica",
-              description:
-                "Vistoria técnica detalhada com todas as constatações.",
-            },
-            {
-              title: "Laudo técnico",
-              description: "Laudo técnico completo conforme NR11.",
-            },
-            {
-              title: "ART",
-              description: "Emissão de ART junto ao CREA.",
-            },
-            {
-              title: "Orientações e treinamento",
-              description:
-                "Orientações para operação segura e manutenção preventiva. Também realizamos treinamentos quando necessário.",
-            },
-          ],
-        },
-        {
           title: "BENEFÍCIOS DA ADEQUAÇÃO NR11",
           items: [
             {
               title: "Previne acidentes",
               description:
-                "Previne acidentes de trabalho, garantindo a segurança dos trabalhadores e evitando lesões graves ou fatais.",
+                "De trabalho, garantindo a segurança dos trabalhadores e evitando lesões graves ou fatais.",
             },
             {
               title: "Evita multas",
               description:
-                "Evita multas e autuações trabalhistas do Ministério do Trabalho, mantendo sua empresa em conformidade com a legislação.",
+                "E autuações trabalhistas do Ministério do Trabalho, mantendo sua empresa em conformidade com a legislação.",
             },
             {
               title: "Reduz riscos",
               description:
-                "Reduz riscos de responsabilidade civil e criminal em caso de acidentes.",
+                "De responsabilidade civil e criminal em caso de acidentes.",
             },
             {
               title: "Aumenta a produtividade",
-              description:
-                "Aumenta a produtividade ao criar um ambiente de trabalho mais seguro.",
+              description: "Ao criar um ambiente de trabalho mais seguro.",
             },
             {
               title: "Melhora a imagem",
               description:
-                "Melhora a imagem da empresa ao demonstrar compromisso com a segurança.",
+                "Da empresa ao demonstrar compromisso com a segurança.",
             },
             {
               title: "Garante tranquilidade",
               description:
-                "Garante tranquilidade ao saber que está em conformidade com todas as exigências legais.",
+                "Ao saber que está em conformidade com todas as exigências legais.",
             },
           ],
         },
@@ -905,7 +820,7 @@ export const servicesData: Record<string, ServiceArticle> = {
           items: [
             {
               title: "Elevadores",
-              description: "Elevadores de carga e passageiros.",
+              description: "Elevadores de carga.",
             },
             {
               title: "Guindastes",
@@ -1009,7 +924,7 @@ export const servicesData: Record<string, ServiceArticle> = {
         {
           title: "A IMPORTÂNCIA DA VISTORIA EM MÁQUINAS PESADAS",
           content:
-            "A vistoria técnica em máquinas pesadas é essencial para identificar problemas estruturais, verificar condições de segurança, avaliar desgastes e garantir que os equipamentos estejam em condições adequadas de operação. Nossos engenheiros realizam análises detalhadas de todos os componentes críticos, incluindo estruturas, sistemas hidráulicos, sistemas elétricos, cabos, ganchos, freios e dispositivos de segurança. Sem vistoria técnica adequada e ART, sua empresa corre riscos sérios: acidentes graves, paralisação de equipamentos, responsabilidade civil e criminal, e problemas legais que podem comprometer a operação.",
+            "A vistoria técnica em máquinas pesadas é essencial para identificar problemas estruturais, verificar condições de segurança, avaliar desgastes e garantir que os equipamentos estejam em condições adequadas de operação. Realizamos análises técnicas dos componentes mecânicos críticos de máquinas pesadas, como estruturas, sistemas hidráulicos, cabos de aço, ganchos, freios e dispositivos de segurança. Sem vistoria técnica adequada e ART, sua empresa corre riscos sérios: acidentes graves, paralisação de equipamentos, responsabilidade civil e criminal, e problemas legais que podem comprometer a operação.",
         },
         {
           title: "O QUE ESTÁ INCLUÍDO NO NOSSO SERVIÇO",
@@ -1059,75 +974,28 @@ export const servicesData: Record<string, ServiceArticle> = {
             },
           ],
         },
-        {
-          title: "NOSSOS SERVIÇOS DE VISTORIA E ART",
-          items: [
-            {
-              title: "Análise estrutural",
-              description:
-                "Análise estrutural de chassi, braços, lanças e componentes estruturais.",
-            },
-            {
-              title: "Sistemas hidráulicos",
-              description:
-                "Verificação de sistemas hidráulicos, bombas, válvulas e cilindros.",
-            },
-            {
-              title: "Sistemas elétricos",
-              description: "Análise de sistemas elétricos e eletrônicos.",
-            },
-            {
-              title: "Dispositivos de segurança",
-              description:
-                "Avaliação de cabos, ganchos, freios e dispositivos de segurança.",
-            },
-            {
-              title: "Sistemas de locomoção",
-              description:
-                "Verificação de pneus, esteiras e sistemas de locomoção.",
-            },
-            {
-              title: "Testes de funcionamento",
-              description: "Testes de funcionamento quando aplicável.",
-            },
-            {
-              title: "Laudo técnico",
-              description:
-                "Emissão de laudo técnico detalhado com todas as constatações.",
-            },
-            {
-              title: "ART",
-              description: "Emissão de ART junto ao CREA.",
-            },
-            {
-              title: "Orientações",
-              description:
-                "Orientações para manutenção preventiva e adequações necessárias.",
-            },
-          ],
-        },
+
         {
           title: "BENEFÍCIOS DA VISTORIA TÉCNICA ADEQUADA",
           items: [
             {
-              title: "Segurança operacional",
+              title: "Garante segurança operacional",
               description:
-                "Garante segurança operacional, identificando problemas antes que se tornem acidentes.",
+                "Identificando problemas antes que se tornem acidentes.",
             },
             {
               title: "Evita paralisação",
               description:
-                "Evita paralisação inesperada de equipamentos através de manutenção preventiva adequada.",
+                "Inesperada de equipamentos através de manutenção preventiva adequada.",
             },
             {
               title: "Reduz custos",
               description:
-                "Reduz custos com reparos corretivos ao identificar problemas precocemente.",
+                "Com reparos corretivos ao identificar problemas precocemente.",
             },
             {
-              title: "Conformidade legal",
-              description:
-                "Garante conformidade legal com emissão de ART adequada.",
+              title: "Garante conformidade legal",
+              description: "Com emissão de ART adequada.",
             },
             {
               title: "Aumenta vida útil",
@@ -1136,13 +1004,12 @@ export const servicesData: Record<string, ServiceArticle> = {
             },
             {
               title: "Melhora produtividade",
-              description:
-                "Melhora a produtividade ao manter equipamentos em condições ideais.",
+              description: "Ao manter equipamentos em condições ideais.",
             },
             {
               title: "Garante tranquilidade",
               description:
-                "Garante tranquilidade ao saber que seus equipamentos estão seguros e em conformidade.",
+                "Ao saber que seus equipamentos estão seguros e em conformidade.",
             },
           ],
         },
@@ -1157,10 +1024,6 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Guindastes e gruas",
               description: "Guindastes e gruas de todos os tipos.",
-            },
-            {
-              title: "Empilhadeiras",
-              description: "Empilhadeiras e paleteiras.",
             },
             {
               title: "Tratores",
@@ -1640,8 +1503,7 @@ export const servicesData: Record<string, ServiceArticle> = {
   },
   "elevadores-plataformas": {
     slug: "elevadores-plataformas",
-    title:
-      "Vistoria e Laudo para Elevadores e Plataformas | Normas de Acessibilidade",
+    title: "Vistoria e Laudo para elevadores e plataformas de acessibilidade",
     metaDescription:
       "Inspeções técnicas e laudos para elevadores e plataformas conforme normas de acessibilidade. Engenheiros especializados em equipamentos de transporte vertical. Atendemos condomínios, empresas, hospitais, shoppings e estabelecimentos comerciais.",
     keywords: [
@@ -1668,7 +1530,7 @@ export const servicesData: Record<string, ServiceArticle> = {
         {
           title: "A IMPORTÂNCIA DA VISTORIA EM ELEVADORES E PLATAFORMAS",
           content:
-            "A vistoria técnica em elevadores e plataformas é essencial para garantir a segurança dos usuários, verificar conformidade com normas de acessibilidade, identificar problemas de funcionamento e garantir que os equipamentos estejam em condições adequadas de uso. É obrigatória e deve ser realizada periodicamente conforme legislação. Sem vistoria técnica adequada e laudo de conformidade, sua empresa ou condomínio corre riscos sérios: acidentes graves, interdição de equipamentos, multas e autuações, responsabilidade civil e criminal, e problemas com órgãos fiscalizadores.",
+            "A vistoria técnica em elevadores e plataformas é essencial para garantir a segurança dos usuários, verificar conformidade com normas, identificar problemas de funcionamento e garantir que os equipamentos estejam em condições adequadas de uso. Deve ser realizado este serviço periodicamente conforme legislação e as normas aplicáveis. Sem vistoria técnica adequada e laudo de conformidade, sua empresa ou condomínio corre riscos sérios: acidentes graves, interdição de equipamentos, multas e autuações, responsabilidade civil e criminal, e problemas com órgãos fiscalizadores.",
         },
         {
           title: "O QUE ESTÁ INCLUÍDO NO NOSSO SERVIÇO",
@@ -1719,56 +1581,11 @@ export const servicesData: Record<string, ServiceArticle> = {
             },
           ],
         },
+
         {
-          title: "NOSSOS SERVIÇOS DE VISTORIA E LAUDO",
-          items: [
-            {
-              title: "Verificação de sistemas de segurança",
-              description:
-                "Verificação de sistemas de segurança (freios, limitadores, dispositivos de emergência).",
-            },
-            {
-              title: "Análise de conformidade",
-              description:
-                "Análise de conformidade com normas de acessibilidade (NBR 9050, NBR 14021).",
-            },
-            {
-              title: "Testes de funcionamento",
-              description: "Testes de funcionamento e performance.",
-            },
-            {
-              title: "Avaliação de manutenção",
-              description: "Avaliação de manutenção e condições gerais.",
-            },
-            {
-              title: "Verificação de sinalização",
-              description: "Verificação de sinalização e orientações.",
-            },
-            {
-              title: "Análise de acessibilidade",
-              description:
-                "Análise de acessibilidade para pessoas com deficiência.",
-            },
-            {
-              title: "Laudo técnico",
-              description:
-                "Emissão de laudo técnico detalhado com todas as constatações.",
-            },
-            {
-              title: "Emissão de ART",
-              description: "Emissão de ART junto ao CREA.",
-            },
-            {
-              title: "Orientações",
-              description:
-                "Orientações para manutenção preventiva e adequações necessárias.",
-            },
-          ],
-        },
-        {
-          title: "NORMAS DE ACESSIBILIDADE APLICÁVEIS",
+          title: "NORMAS APLICÁVEIS",
           content:
-            "Nossos laudos são elaborados seguindo rigorosamente as normas de acessibilidade vigentes, incluindo NBR 9050 (Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos), NBR 14021 (Elevadores de passageiros - requisitos de segurança para construção e instalação), normas municipais específicas de cada localidade, e demais regulamentações aplicáveis, garantindo total conformidade e acessibilidade. Nossos engenheiros estão atualizados com todas as mudanças normativas e garantem que seus equipamentos estejam sempre em conformidade.",
+            "Os nossos laudos são preparados de acordo com todas as normas vigentes, incluindo NBR 15597, NBR 5665, NBR 5666, entre outras. Também levamos em consideração as legislações municipais específicas de cada região e as demais regulamentações aplicáveis, assegurando conformidade total e acessibilidade.  Nossos engenheiros estão atualizados com todas as normativas e garantem que seus equipamentos estejam sempre em conformidade.",
         },
         {
           title: "BENEFÍCIOS DA VISTORIA TÉCNICA ADEQUADA",
@@ -1869,7 +1686,7 @@ export const servicesData: Record<string, ServiceArticle> = {
     images: [],
     content: {
       introduction:
-        "PRECISA REALIZAR VISTORIA E LAUDO TÉCNICO DO SEU SISTEMA DE EXAUSTÃO DE COZINHA? A ÍTRIO Engenharia realiza vistoria técnica completa e elabora laudo técnico para sistemas de exaustão de cozinhas, garantindo conformidade com normas técnicas e segurança operacional. Especialistas em sistemas de ventilação e exaustão para restaurantes, lanchonetes, hotéis e estabelecimentos comerciais.",
+        "PRECISA REALIZAR VISTORIA E LAUDO TÉCNICO DO SEU SISTEMA DE EXAUSTÃO DE COZINHA? A ÍTRIO Engenharia realiza vistoria técnica completa e elabora laudo técnico para sistemas de exaustão de cozinhas, garantindo conformidade com normas técnicas e segurança operacional. Especialistas em sistemas de exaustão para restaurantes, lanchonetes, hotéis, e estabelecimentos comerciais.",
       sections: [
         {
           title: "A IMPORTÂNCIA DO SISTEMA DE EXAUSTÃO",
@@ -1988,14 +1805,6 @@ export const servicesData: Record<string, ServiceArticle> = {
               description: "Perícia técnica em processos judiciais.",
             },
             {
-              title: "Perícia trabalhista",
-              description: "Perícia trabalhista.",
-            },
-            {
-              title: "Perícia em processos administrativos",
-              description: "Perícia em processos administrativos.",
-            },
-            {
               title: "Assistência técnica para defesa",
               description: "Assistência técnica para defesa.",
             },
@@ -2057,7 +1866,7 @@ export const servicesData: Record<string, ServiceArticle> = {
         {
           title: "QUANDO É NECESSÁRIO ENGENHEIRO RT",
           content:
-            "Engenheiro RT é necessário para empresas que desenvolvem atividades técnicas; estabelecimentos comerciais com sistemas técnicos; empresas de construção; empresas de manutenção; e demais empresas que necessitam de responsável técnico registrado no CREA. É obrigatório conforme legislação do CREA.",
+            "Engenheiro RT é necessário para empresas que desenvolvem atividades técnicas; estabelecimentos comerciais com sistemas técnicos; empresas de manutenção; e demais empresas que necessitam de responsável técnico registrado no CREA. É obrigatório conforme legislação do CREA.",
         },
         {
           title: "BENEFÍCIOS DE TER ENGENHEIRO RT",
@@ -2090,14 +1899,15 @@ export const servicesData: Record<string, ServiceArticle> = {
         "PRECISA DE ENGENHEIRO RESPONSÁVEL TÉCNICO (RT) PARA SEU DESMANCHE? A ÍTRIO Engenharia oferece serviços de engenheiro responsável técnico especializado para desmanches. Engenheiros registrados no CREA com experiência específica em desmanches para atuar como RT.",
       sections: [
         {
-          title: "O QUE É ENGENHEIRO RT PARA DESMANCHES",
+          title:
+            "Por que é importante possuir um responsável técnico para desmanches?",
           content:
-            "O Engenheiro Responsável Técnico (RT) para desmanches é o profissional registrado no CREA responsável pela supervisão técnica de atividades em desmanches. É obrigatório para desmanches que desenvolvem atividades técnicas. O RT assume a responsabilidade técnica perante o CREA e órgãos fiscalizadores, garantindo que as atividades sejam realizadas conforme normas técnicas.",
+            "O Engenheiro Responsável Técnico (RT) para desmanches é o profissional registrado no CREA responsável pela supervisão técnica de atividades em desmanches. É obrigatório para desmanches que desenvolvem atividades técnicas. O RT assume a responsabilidade técnica perante o CREA e órgãos fiscalizadores, garantindo que as atividades sejam realizadas dentro das diretrizes técnicas.",
         },
         {
           title: "QUANDO É NECESSÁRIO RT PARA DESMANCHES",
           content:
-            "Engenheiro RT é obrigatório para desmanches que desenvolvem atividades técnicas; desmanches que realizam modificações em veículos; desmanches que precisam de documentação técnica; e desmanches que necessitam de responsável técnico registrado no CREA conforme legislação.",
+            "Engenheiro RT é obrigatório para desmanches que desenvolvem atividades técnicas, desmanches que realizam modificações em veículos, desmanches que precisam de documentação técnica, e desmanches que necessitam de responsável técnico registrado no CREA conforme legislação.",
         },
         {
           title: "BENEFÍCIOS DE TER RT PARA DESMANCHE",
@@ -2111,7 +1921,7 @@ export const servicesData: Record<string, ServiceArticle> = {
   },
   projetos: {
     slug: "projetos",
-    title: "Projetos Técnicos de Engenharia - Elaboração de Projetos | ÍTRIO",
+    title: "Projetos MECÂNICOS - Elaboração de Projetos | ÍTRIO",
     metaDescription:
       "Elaboração de projetos técnicos de engenharia. Engenheiros especializados em projetos estruturais, elétricos, hidráulicos e arquitetônicos.",
     keywords: [
@@ -2128,55 +1938,51 @@ export const servicesData: Record<string, ServiceArticle> = {
     images: [],
     content: {
       introduction:
-        "PRECISA ELABORAR PROJETO TÉCNICO DE ENGENHARIA? A ÍTRIO Engenharia elabora projetos técnicos de engenharia completos, incluindo projetos estruturais, elétricos, hidráulicos e arquitetônicos. Engenheiros especializados com ampla experiência em elaboração de projetos técnicos.",
+        "PRECISA ELABORAR ALGUM PROJETO MECÂNICO? A ÍTRIO Engenharia elabora projetos mecânicos completos, dos mais diversos segmentos. Engenheiros especializados com ampla experiência em elaboração de projetos mecânicos.",
       sections: [
         {
-          title: "O QUE É PROJETO TÉCNICO DE ENGENHARIA",
+          title: "O que é um projeto mecânico?",
           content:
-            "Projeto técnico de engenharia é um conjunto de documentos técnicos que define como uma obra, instalação ou sistema será executado. Inclui plantas, especificações técnicas, memoriais descritivos, cálculos e demais documentação necessária. É obrigatório para obras, instalações e sistemas técnicos, garantindo que sejam executados conforme normas técnicas e com segurança.",
+            "Um projeto mecânico é um conjunto de documentos técnicos que define como um sistema será executado. Inclui desenhos técnicos, especificações técnicas, memoriais descritivos, cálculos e demais documentações necessárias. Um projeto mecânico garante que uma máquina, equipamento ou sistema opere nas melhores condições com segurança e conforme as normas técnicas.",
         },
         {
           title: "TIPOS DE PROJETOS QUE ELABORAMOS",
           items: [
             {
-              title: "Projetos estruturais",
-              description: "Projetos estruturais para edificações.",
+              title:
+                "Projetos mecânicos para máquinas e equipamentos industriais",
+              description:
+                "Projetos mecânicos para máquinas e equipamentos industriais.",
             },
             {
-              title: "Projetos elétricos",
-              description: "Projetos elétricos completos.",
+              title: "Projetos de instalações mecânicas industriais",
+              description: "Projetos de instalações mecânicas industriais.",
             },
             {
-              title: "Projetos hidráulicos",
-              description: "Projetos hidráulicos e sanitários.",
+              title: "Projetos de sistemas hidráulicos de máquinas",
+              description: "Projetos de sistemas hidráulicos de máquinas.",
             },
             {
-              title: "Projetos arquitetônicos",
-              description: "Projetos arquitetônicos.",
+              title: "Projetos de adequação técnica e retrofit mecânico",
+              description: "Projetos de adequação técnica e retrofit mecânico.",
             },
             {
-              title: "Projetos de instalações industriais",
-              description: "Projetos de instalações industriais.",
-            },
-            {
-              title: "Projetos de adequação e reforma",
-              description: "Projetos de adequação e reforma.",
-            },
-            {
-              title: "Projetos de regularização",
-              description: "Projetos de regularização.",
+              title:
+                "Projetos para regularização e atendimento a normas técnicas",
+              description:
+                "Projetos para regularização e atendimento a normas técnicas.",
             },
             {
               title: "Entre outros",
               description:
-                "Entre outros, elaboramos demais tipos de projetos técnicos de engenharia. Todos os projetos são elaborados seguindo rigorosamente as normas técnicas aplicáveis.",
+                "Todos os projetos são desenvolvidos na área de Engenharia Mecânica, conforme atribuições legais e normas técnicas vigentes.",
             },
           ],
         },
         {
-          title: "BENEFÍCIOS DE TER PROJETO TÉCNICO ADEQUADO",
+          title: "BENEFÍCIOS DE TER PROJETO MECÂNICO ADEQUADO",
           content:
-            "Ter projeto técnico adequado garante execução correta da obra ou instalação. Evita retrabalhos e custos extras. Garante conformidade com normas técnicas. Facilita aprovação em órgãos fiscalizadores. Reduz riscos de problemas estruturais e de segurança. E aumenta a qualidade e durabilidade da obra ou instalação.",
+            "Ter um projeto mecânico adequado garante execução correta de máquinas e equipamentos e sistemas. Evita retrabalhos e custos extras. Garante conformidade com normas técnicas. Facilita aprovação em órgãos fiscalizadores. Reduz riscos de problemas estruturais e de segurança. Aumenta a qualidade e durabilidade do sistema ou da instalação.",
         },
       ],
       conclusion:
@@ -2275,22 +2081,22 @@ export const servicesData: Record<string, ServiceArticle> = {
     images: [],
     content: {
       introduction:
-        "PRECISA REALIZAR RECLASSIFICAÇÃO DE MONTA OU CARGA? A ÍTRIO Engenharia realiza reclassificação técnica de monta e carga, elaborando laudos técnicos detalhados. Engenheiros especializados em reclassificação de equipamentos e estruturas.",
+        "PRECISA REALIZAR RECLASSIFICAÇÃO DE MONTA VEICULAR? A ÍTRIO Engenharia realiza reclassificação de monta de veículos sinistrados, por meio de laudo técnico elaborado por engenheiro mecânico habilitado, atendendo às exigências do DETRAN e demais órgãos competentes. O serviço é indicado para veículos que sofreram sinistro e necessitam de avaliação técnica para definição ou revisão da classificação de monta, assegurando segurança, conformidade legal e respaldo técnico.",
       sections: [
         {
-          title: "O QUE É RECLASSIFICAÇÃO DE MONTA",
+          title: "O QUE É RECLASSIFICAÇÃO DE MONTA VEICULAR?",
           content:
-            "Reclassificação de monta é um processo técnico que reavalia a capacidade de carga e monta de equipamentos ou estruturas, considerando condições atuais, desgastes e modificações. É essencial para garantir que equipamentos e estruturas estejam sendo utilizados dentro de suas capacidades seguras. É obrigatória quando há modificações, desgastes significativos ou necessidade de reavaliação.",
+            "A reclassificação de monta é um processo técnico que avalia as condições mecânicas e estruturais do veículo após um sinistro, considerando os danos sofridos, os reparos realizados e a integridade dos sistemas avaliáveis pela engenharia mecânica. O objetivo é verificar se o veículo apresenta condições técnicas adequadas para circulação, regularização e atualização de sua classificação junto ao DETRAN, conforme critérios técnicos e normativos aplicáveis.",
         },
         {
-          title: "QUANDO É NECESSÁRIA RECLASSIFICAÇÃO",
+          title: "QUANDO É NECESSÁRIA A RECLASSIFICAÇÃO DE MONTA?",
           content:
-            "Reclassificação é necessária quando há modificações em equipamentos ou estruturas; quando há desgastes significativos; quando há necessidade de reavaliação de capacidade; quando há mudanças nas condições de uso; e quando há exigência de órgãos fiscalizadores. É essencial para garantir segurança e conformidade.",
+            "A reclassificação de monta veicular é necessária quando: o veículo sofre sinistro com danos significativos; há discordância ou necessidade de revisão da classificação de monta atribuída anteriormente; o veículo passou por reparos estruturais ou mecânicos relevantes; há exigência do DETRAN ou necessidade de regularização documental; o proprietário busca comprovação técnica das condições do veículo para fins legais.",
         },
         {
-          title: "BENEFÍCIOS DA RECLASSIFICAÇÃO ADEQUADA",
+          title: "BENEFÍCIOS DA RECLASSIFICAÇÃO DE MONTA ADEQUADA",
           content:
-            "A reclassificação adequada garante segurança ao reavaliar capacidades reais. Previne acidentes por sobrecarga. Garante conformidade com normas técnicas. Evita multas e autuações. E aumenta a confiabilidade e vida útil dos equipamentos.",
+            "Avaliação técnica imparcial das condições do veículo. Atendimento às exigências do DETRAN. Redução de riscos legais e administrativos. Maior segurança para o proprietário e futuros usuários. Respaldo técnico por meio de laudo e ART.",
         },
       ],
       conclusion:
@@ -2408,7 +2214,7 @@ export const servicesData: Record<string, ServiceArticle> = {
     images: [],
     content: {
       introduction:
-        "PRECISA REALIZAR VISTORIA DO CORPO DE BOMBEIROS PARA AVCB OU CLCB? A ÍTRIO Engenharia realiza vistorias técnicas e elabora laudos para AVCB (Auto de Vistoria do Corpo de Bombeiros) e CLCB (Certificado de Licença do Corpo de Bombeiros). Engenheiros especializados em vistorias do Corpo de Bombeiros.",
+        "PRECISA REALIZAR VISTORIA DO CORPO DE BOMBEIROS PARA AVCB OU CLCB? A ÍTRIO Engenharia realiza vistorias técnicas e elabora laudos para AVCB (Auto de Vistoria do Corpo de Bombeiros) e CLCB (Certificado de Licença do Corpo de Bombeiros). Engenheiros especializados em projetos de prevenção e combate à incêndio com emissão de laudo e ART.",
       sections: [
         {
           title: "O QUE É AVCB E CLCB",
@@ -2418,7 +2224,7 @@ export const servicesData: Record<string, ServiceArticle> = {
         {
           title: "QUANDO É NECESSÁRIO AVCB/CLCB",
           content:
-            "AVCB/CLCB é necessário para estabelecimentos comerciais; estabelecimentos industriais; estabelecimentos de uso público; edifícios comerciais e residenciais; e demais estabelecimentos que necessitam de licença do Corpo de Bombeiros conforme legislação local. É obrigatório e deve ser renovado periodicamente.",
+            "AVCB/CLCB é necessário para estabelecimentos comerciais, estabelecimentos industriais; estabelecimentos de uso público, edifícios comerciais e residenciais, e demais estabelecimentos que necessitam de licença do Corpo de Bombeiros conforme legislação local. É obrigatório e deve ser renovado periodicamente.",
         },
         {
           title: "O QUE ESTÁ INCLUÍDO NO NOSSO SERVIÇO",
@@ -2452,6 +2258,11 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Suporte para AVCB/CLCB",
               description: "Suporte para obtenção de AVCB/CLCB.",
+            },
+            {
+              title: "ELABORAÇÃO DE PROJETO TÉCNICO DE PREVENÇÃO A INCÊNDIO",
+              description:
+                "Seguimos as exigências para aprovação de seu projeto.",
             },
           ],
         },
