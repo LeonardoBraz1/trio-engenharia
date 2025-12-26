@@ -7,7 +7,7 @@ const AboutSection = () => {
     "Soluções personalizadas",
     "Comunicação transparente",
     "Entrega dentro do prazo",
-    "Qualidade certificada",
+    "Qualidade técnica e responsabilidade profissional",
   ];
 
   return (
@@ -64,27 +64,27 @@ const AboutSection = () => {
               Sobre Nós
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-              Compromisso com a excelência em cada projeto
+              Excelência técnica com responsabilidade e confiança
             </h2>
 
             <div className="space-y-3 sm:space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed mb-6 sm:mb-8">
               <p>
-                A <strong className="text-foreground">ÍTRIO Engenharia</strong>{" "}
-                é uma empresa especializada em engenharia técnica. Nossa missão
-                vai além da engenharia nosso compromisso é com você.
+                A <strong className="text-foreground">Ítrio Engenharia</strong>{" "}
+                atua no desenvolvimento de soluções em engenharia mecânica,
+                oferecendo serviços técnicos especializados com foco em
+                conformidade normativa, segurança e responsabilidade legal.
               </p>
               <p>
-                Transformamos desafios em soluções eficientes, sempre com
-                autenticidade, transparência e foco total na qualidade. Cada
-                projeto é único, por isso dedicamos tempo e expertise para
-                entender suas necessidades e entregar soluções personalizadas
-                que superem expectativas.
+                Nosso trabalho é pautado pela precisão técnica, transparência e
+                compromisso com resultados. Atuamos desde a análise até a
+                emissão de laudos e ART, sempre alinhados às normas vigentes e
+                às melhores práticas da engenharia.
               </p>
               <p>
-                Atuamos com comunicação clara, responsabilidade e precisão,
-                garantindo resultados confiáveis dentro do prazo. Conte conosco
-                para transformar suas ideias em realidade com eficiência,
-                precisão e integridade.
+                Cada demanda é avaliada de forma criteriosa, garantindo soluções
+                personalizadas, eficientes e seguras. Nosso compromisso é
+                entregar clareza, confiabilidade e suporte técnico em todas as
+                etapas do processo.
               </p>
             </div>
 

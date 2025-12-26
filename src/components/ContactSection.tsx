@@ -34,7 +34,7 @@ const ContactSection = () => {
               Contato
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-foreground mb-4 sm:mb-6">
-              Vamos conversar sobre seu projeto?
+              Vamos conversar sobre a sua demanda?
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-sm sm:text-base px-4 sm:px-0">
               Entre em contato conosco para tirar dúvidas, solicitar orçamentos

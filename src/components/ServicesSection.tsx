@@ -151,13 +151,13 @@ const ServicesSection = () => {
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-foreground mb-4 sm:mb-6">
             Serviços da ÍTRIO Engenharia - Soluções completas em engenharia
-            técnica
+            mecânica
           </h2>
           <p className="text-muted-foreground leading-relaxed text-sm sm:text-base px-4 sm:px-0">
             A <strong>ÍTRIO Engenharia</strong> (ITRIO) oferece um portfólio
-            completo de serviços de engenharia técnica para garantir a segurança
-            e conformidade do seu negócio. Conheça os serviços especializados da
-            ÍTRIO.
+            completo de serviços de engenharia mecânica para garantir a
+            segurança e conformidade do seu negócio. Conheça os serviços
+            especializados da ÍTRIO.
           </p>
         </ScrollAnimation>
 

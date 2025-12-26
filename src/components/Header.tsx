@@ -9,6 +9,7 @@ const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isServicePage = location.pathname.startsWith("/servicos/");
+  const isBlogPage = location.pathname.startsWith("/blog");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,13 +23,14 @@ const Header = () => {
     { label: "Início", href: "#inicio" },
     { label: "Sobre", href: "#sobre" },
     { label: "Serviços", href: "#servicos" },
+    { label: "Blog", href: "/blog", isRoute: true },
     { label: "Contato", href: "#contato" },
-  ];
+  ] as const;
 
   const whatsappLink =
     "https://wa.me/5511914953344?text=Olá! Gostaria de solicitar um orçamento.";
 
-  const shouldUseDarkColors = isScrolled || isServicePage;
+  const shouldUseDarkColors = isScrolled || isServicePage || isBlogPage;
   const logoSource = shouldUseDarkColors
     ? `${import.meta.env.BASE_URL}azul.png`
     : `${import.meta.env.BASE_URL}branco.png`;
@@ -127,27 +129,52 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={
-                  isServicePage
-                    ? `${import.meta.env.BASE_URL}${item.href}`
-                    : item.href
-                }
-                onClick={(e) => {
-                  if (isServicePage) {
-                    e.preventDefault();
-                    navigate(`/${item.href}`);
-                  } else {
-                    handleSmoothScroll(e, item.href);
+            {navItems.map((item) => {
+              const isRoute = (item as any).isRoute || item.href.startsWith("/");
+              const isAnchor = item.href.startsWith("#");
+
+              if (isRoute) {
+                return (
+                  <button
+                    key={item.label}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate(item.href);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className={`font-medium transition-colors duration-200 hover:text-accent ${textColor}`}
+                  >
+                    {item.label}
+                  </button>
+                );
+              }
+
+              return (
+                <a
+                  key={item.label}
+                  href={
+                    isServicePage || location.pathname !== "/"
+                      ? `${import.meta.env.BASE_URL}${item.href}`
+                      : item.href
                   }
-                }}
-                className={`font-medium transition-colors duration-200 hover:text-accent ${textColor}`}
-              >
-                {item.label}
-              </a>
-            ))}
+                  onClick={(e) => {
+                    if (isServicePage || location.pathname !== "/") {
+                      e.preventDefault();
+                      if (isAnchor) {
+                        navigate(`/${item.href}`);
+                      } else {
+                        navigate(item.href);
+                      }
+                    } else {
+                      handleSmoothScroll(e, item.href);
+                    }
+                  }}
+                  className={`font-medium transition-colors duration-200 hover:text-accent ${textColor}`}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </div>
 
           {/* CTA Button */}
@@ -176,28 +203,53 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-card/98 backdrop-blur-lg rounded-b-2xl shadow-float pb-6 animate-fade-in">
             <div className="flex flex-col gap-4 px-4">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={
-                    isServicePage
-                      ? `${import.meta.env.BASE_URL}${item.href}`
-                      : item.href
-                  }
-                  onClick={(e) => {
-                    if (isServicePage) {
-                      e.preventDefault();
-                      navigate(`/${item.href}`);
-                      setIsMobileMenuOpen(false);
-                    } else {
-                      handleSmoothScroll(e, item.href);
+              {navItems.map((item) => {
+                const isRoute = (item as any).isRoute || item.href.startsWith("/");
+                const isAnchor = item.href.startsWith("#");
+
+                if (isRoute) {
+                  return (
+                    <button
+                      key={item.label}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigate(item.href);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="text-foreground font-medium py-2 hover:text-accent transition-colors text-left"
+                    >
+                      {item.label}
+                    </button>
+                  );
+                }
+
+                return (
+                  <a
+                    key={item.label}
+                    href={
+                      isServicePage || location.pathname !== "/"
+                        ? `${import.meta.env.BASE_URL}${item.href}`
+                        : item.href
                     }
-                  }}
-                  className="text-foreground font-medium py-2 hover:text-accent transition-colors"
-                >
-                  {item.label}
-                </a>
-              ))}
+                    onClick={(e) => {
+                      if (isServicePage || location.pathname !== "/") {
+                        e.preventDefault();
+                        if (isAnchor) {
+                          navigate(`/${item.href}`);
+                        } else {
+                          navigate(item.href);
+                        }
+                        setIsMobileMenuOpen(false);
+                      } else {
+                        handleSmoothScroll(e, item.href);
+                      }
+                    }}
+                    className="text-foreground font-medium py-2 hover:text-accent transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                );
+              })}
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <Button variant="accent" size="lg" className="w-full mt-2">
                   Solicitar Orçamento

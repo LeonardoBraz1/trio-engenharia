@@ -63,7 +63,7 @@ const WhyChooseSection = () => {
           </h2>
           <p className="text-muted-foreground leading-relaxed text-sm sm:text-base px-4 sm:px-0">
             A <strong>ÍTRIO Engenharia</strong> é especialista em transformar
-            desafios técnicos em soluções eficientes e seguras para o seu
+            desafios mecânica em soluções eficientes e seguras para o seu
             negócio. Somos uma empresa de engenharia técnica comprometida com a
             excelência.
           </p>

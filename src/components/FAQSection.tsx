@@ -32,19 +32,14 @@ const FAQSection = () => {
         "Sim! A ÍTRIO Engenharia realiza adequação completa às normas NR12 (máquinas e equipamentos) e NR13 (vasos de pressão, caldeiras e autoclaves). Oferecemos vistoria técnica, laudo técnico, projeto de adequação e orientação para conformidade total com as normas regulamentadoras.",
     },
     {
-      question: "O que é PMOC e vocês elaboram?",
+      question: "O que é PMOC? Vocês elaboram?",
       answer:
         "PMOC (Plano de Manutenção, Operação e Controle) é obrigatório para sistemas de ar condicionado e climatização. A ÍTRIO Engenharia elabora PMOC completo, incluindo vistoria técnica, laudo técnico e documentação necessária para conformidade com a legislação vigente.",
     },
     {
-      question: "Vocês atendem em todo o Brasil?",
-      answer:
-        "Sim! A ÍTRIO Engenharia atende em todo o Brasil. Realizamos vistorias técnicas e emitimos laudos técnicos em São Paulo, Rio de Janeiro, Minas Gerais, Paraná, Santa Catarina e demais estados. Entre em contato para verificar disponibilidade na sua região.",
-    },
-    {
       question: "Como solicitar um orçamento de laudo técnico?",
       answer:
-        "Para solicitar orçamento de laudo técnico, vistoria técnica ou ART, entre em contato conosco pelo WhatsApp (11) 91495-3344 ou e-mail thayslima@itrioengenharia.com.br. Informe o tipo de serviço necessário e nossa equipe retornará rapidamente com um orçamento personalizado.",
+        "Para solicitar um orçamento de laudo técnico, vistoria técnica ou ART, entre em contato conosco pelo WhatsApp (11) 91495-3344 ou pelo e-mail thayslima@itrioengenharia.com.br. Basta informar o tipo de serviço desejado. A partir das informações fornecidas, será avaliada a necessidade de visita técnica ou, quando possível, o orçamento poderá ser elaborado com base nas características do seu processo, de forma personalizada.",
     },
   ];
 
@@ -63,7 +58,7 @@ const FAQSection = () => {
           </h2>
           <p className="text-muted-foreground leading-relaxed text-sm sm:text-base px-4 sm:px-0">
             Encontre respostas para as principais perguntas sobre nossos
-            serviços de engenharia técnica.
+            serviços de engenharia mecânica.
           </p>
         </ScrollAnimation>
 
