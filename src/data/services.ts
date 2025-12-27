@@ -95,32 +95,32 @@ export const servicesData: Record<string, ServiceArticle> = {
             },
             {
               title: "Verificação de fixações",
-              description: "Verificação de fixações e ancoragens.",
+              description: "verificação de fixações e ancoragens.",
             },
             {
               title: "Avaliação de áreas de impacto",
               description:
-                "Avaliação de áreas de impacto e superfícies de segurança.",
+                "avaliação de áreas de impacto e superfícies de segurança.",
             },
             {
               title: "Inspeção visual e tátil",
-              description: "Inspeção visual e tátil de todos os componentes.",
+              description: "inspeção visual e tátil de todos os componentes.",
             },
             {
               title: "Verificação de altura",
-              description: "Verificação de altura de queda livre.",
+              description: "verificação de altura de queda livre.",
             },
             {
               title: "Análise de espaçamento",
-              description: "Análise de espaçamento entre equipamentos.",
+              description: "análise de espaçamento entre equipamentos.",
             },
             {
               title: "Avaliação de manutenção",
-              description: "Avaliação de condições de manutenção.",
+              description: "avaliação de condições de manutenção.",
             },
             {
               title: "Verificação de sinalização",
-              description: "Verificação de sinalização e orientações de uso.",
+              description: "verificação de sinalização e orientações de uso.",
             },
             {
               title: "Emissão de laudo técnico",
@@ -293,39 +293,39 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Melhor qualidade do ar interno",
               description:
-                "Reduzindo problemas de saúde e aumentando o bem-estar.",
+                "reduzindo problemas de saúde e aumentando o bem-estar.",
             },
             {
               title: "Redução de custos",
               description:
-                "Com manutenção corretiva através de manutenção preventiva adequada.",
+                "com manutenção corretiva através de manutenção preventiva adequada.",
             },
             {
               title: "Conformidade legal",
               description:
-                "Evitando multas e autuações da ANVISA e órgãos fiscalizadores.",
+                "evitando multas e autuações da ANVISA e órgãos fiscalizadores.",
             },
             {
               title: "Prevenção de problemas de saúde",
-              description: "Relacionados à má qualidade do ar.",
+              description: "relacionados à má qualidade do ar.",
             },
             {
               title: "Maior eficiência energética",
               description:
-                "Dos sistemas de climatização, reduzindo custos operacionais.",
+                "dos sistemas de climatização, reduzindo custos operacionais.",
             },
             {
-              title: "Aumento da vida útil dos equipamentos",
+              title: "Aumento da vida útil dos equipamentos.",
               description: "",
             },
             {
               title: "Tranquilidade",
               description:
-                "Ao saber que está em conformidade com a legislação.",
+                "ao saber que está em conformidade com a legislação.",
             },
             {
               title: "Valorização do estabelecimento",
-              description: "Ao demonstrar compromisso com a saúde e segurança.",
+              description: "ao demonstrar compromisso com a saúde e segurança.",
             },
           ],
         },
@@ -335,43 +335,39 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Plano de manutenção preventiva",
               description:
-                "Plano de manutenção preventiva com cronograma anual.",
+                "plano de manutenção preventiva com cronograma anual.",
             },
             {
               title: "Plano de operação e controle",
               description:
-                "Plano de operação e controle com protocolos específicos.",
+                "plano de operação e controle com protocolos específicos.",
             },
             {
               title: "Inspeções periódicas",
               description:
-                "Inspeções periódicas realizadas por engenheiro especializado.",
+                "inspeções periódicas realizadas por engenheiro especializado.",
             },
             {
               title: "Laudos técnicos",
               description:
-                "Laudos técnicos a fim de verificar a integridade dos equipamentos.",
+                "laudos técnicos a fim de verificar a integridade dos equipamentos.",
             },
             {
               title: "Relatórios de conformidade",
-              description: "Relatórios de conformidade para fiscalização.",
+              description: "relatórios de conformidade para fiscalização.",
             },
             {
               title: "Documentação completa",
-              description: "Documentação completa e organizada.",
+              description: "documentação completa e organizada.",
             },
             {
               title: "Orientações para manutenção",
-              description: "Orientações para manutenção preventiva.",
-            },
-            {
-              title: "Treinamento de equipe",
-              description: "Treinamento de equipe quando necessário.",
+              description: "orientações para manutenção preventiva.",
             },
             {
               title: "Acompanhamento contínuo",
               description:
-                "Acompanhamento contínuo. Realizamos também adequações necessárias para garantir conformidade total com a legislação vigente, identificando e corrigindo não conformidades.",
+                "acompanhamento contínuo. Realizamos também adequações necessárias para garantir conformidade total com a legislação vigente, identificando e corrigindo não conformidades.",
             },
           ],
         },
@@ -381,44 +377,44 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Empresas e escritórios comerciais",
               description:
-                "Empresas e escritórios comerciais que precisam de PMOC para seus sistemas de climatização.",
+                "empresas e escritórios comerciais que precisam de PMOC para seus sistemas de climatização.",
             },
             {
               title: "Clínicas médicas e odontológicas",
               description:
-                "Clínicas médicas e odontológicas que exigem qualidade do ar interno.",
+                "clínicas médicas e odontológicas que exigem qualidade do ar interno.",
             },
             {
               title: "Hospitais e unidades de saúde",
               description:
-                "Hospitais e unidades de saúde com requisitos rigorosos de climatização.",
+                "hospitais e unidades de saúde com requisitos rigorosos de climatização.",
             },
             {
               title: "Shoppings centers",
               description:
-                "Shoppings centers e estabelecimentos comerciais de grande porte.",
+                "shoppings centers e estabelecimentos comerciais de grande porte.",
             },
             {
               title: "Hotéis e resorts",
               description:
-                "Hotéis e resorts com sistemas de climatização central.",
+                "hotéis e resorts com sistemas de climatização central.",
             },
             {
               title: "Restaurantes",
-              description: "Restaurantes e estabelecimentos alimentícios.",
+              description: "restaurantes e estabelecimentos alimentícios.",
             },
             {
               title: "Academias e centros esportivos",
-              description: "Academias e centros esportivos.",
+              description: "academias e centros esportivos.",
             },
             {
               title: "Escolas e instituições de ensino",
-              description: "Escolas e instituições de ensino.",
+              description: "escolas e instituições de ensino.",
             },
             {
               title: "Entre outros",
               description:
-                "Atendemos entre outros estabelecimentos: qualquer local que possua sistema de ar condicionado e precise de PMOC. Para cada tipo de estabelecimento, adaptamos o PMOC às necessidades específicas e garantimos total conformidade.",
+                "atendemos entre outros estabelecimentos: qualquer local que possua sistema de ar condicionado e precise de PMOC. Para cada tipo de estabelecimento, adaptamos o PMOC às necessidades específicas e garantimos total conformidade.",
             },
           ],
         },
@@ -428,36 +424,31 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Vistoria técnica",
               description:
-                "Primeiro, realizamos vistoria técnica do sistema de climatização para cadastro completo.",
+                "primeiro, realizamos vistoria técnica do sistema de climatização para cadastro completo.",
             },
             {
               title: "Elaboração do PMOC",
               description:
-                "Em seguida, elaboramos o PMOC detalhado com todos os planos e procedimentos.",
+                "em seguida, elaboramos o PMOC detalhado com todos os planos e procedimentos.",
             },
             {
               title: "Documentação",
-              description:
-                "Preparamos a documentação completa para fiscalização.",
+              description: "preparamos a documentação completa.",
             },
             {
               title: "Inspeções periódicas",
               description:
-                "Realizamos inspeções periódicas conforme cronograma.",
+                "realizamos inspeções periódicas conforme cronograma.",
             },
             {
               title: "Laudos técnicos",
               description:
-                "Emitimos laudos técnicos para verificar a integridade dos equipamentos.",
-            },
-            {
-              title: "Relatórios",
-              description: "Fornecemos relatórios de conformidade.",
+                "emitimos laudos técnicos para verificar a integridade dos equipamentos.",
             },
             {
               title: "Suporte contínuo",
               description:
-                "Oferecemos suporte contínuo para manutenção e atualizações. Todo o processo é acompanhado de perto, garantindo agilidade, qualidade e conformidade total com a legislação.",
+                "oferecemos suporte contínuo para manutenção e atualizações. Todo o processo é acompanhado de perto, garantindo agilidade, qualidade e conformidade total com a legislação.",
             },
           ],
         },
@@ -510,46 +501,46 @@ export const servicesData: Record<string, ServiceArticle> = {
             },
             {
               title: "Análise de riscos",
-              description: "Análise de riscos detalhada.",
+              description: "análise de riscos detalhada.",
             },
             {
               title: "Projeto de adequação",
-              description: "Projeto de adequação com especificações técnicas.",
+              description: "projeto de adequação com especificações técnicas.",
             },
             {
               title: "Instalação de proteções",
-              description: "Instalação de proteções fixas e móveis.",
+              description: "instalação de proteções fixas e móveis.",
             },
             {
               title: "Dispositivos de segurança",
               description:
-                "Instalação de dispositivos de segurança (sensores, cortinas de luz, paradas de emergência).",
+                "instalação de dispositivos de segurança (sensores, cortinas de luz, paradas de emergência).",
             },
             {
               title: "Sinalização adequada",
-              description: "Sinalização adequada conforme NR12.",
+              description: "sinalização adequada conforme NR12.",
             },
             {
               title: "Procedimentos de trabalho seguro",
-              description: "Elaboração de procedimentos de trabalho seguro.",
+              description: "elaboração de procedimentos de trabalho seguro.",
             },
             {
               title: "Treinamento de operadores",
-              description: "Treinamento de operadores quando necessário.",
+              description: "treinamento de operadores quando necessário.",
             },
             {
               title: "Laudo técnico completo",
-              description: "Emissão de laudo técnico completo.",
+              description: "emissão de laudo técnico completo.",
             },
             {
               title: "Emissão de ART",
               description:
-                "Emissão de ART (Anotação de Responsabilidade Técnica).",
+                "emissão de ART (Anotação de Responsabilidade Técnica).",
             },
             {
               title: "Relatório de conformidade",
               description:
-                "Relatório de conformidade. Toda a adequação é realizada seguindo rigorosamente a NR12 e demais normas técnicas aplicáveis.",
+                "relatório de conformidade. Toda a adequação é realizada seguindo rigorosamente a NR12 e demais normas técnicas aplicáveis.",
             },
           ],
         },
@@ -559,36 +550,36 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Previne acidentes",
               description:
-                "De trabalho, garantindo a segurança dos trabalhadores e evitando lesões graves ou fatais.",
+                "de trabalho, garantindo a segurança dos trabalhadores e evitando lesões graves ou fatais.",
             },
             {
               title: "Evita multas",
               description:
-                "E autuações trabalhistas do Ministério do Trabalho, mantendo sua empresa em conformidade com a legislação.",
+                "e autuações trabalhistas do Ministério do Trabalho, mantendo sua empresa em conformidade com a legislação.",
             },
             {
               title: "Reduz riscos",
               description:
-                "De responsabilidade civil e criminal em caso de acidentes.",
+                "de responsabilidade civil e criminal em caso de acidentes.",
             },
             {
               title: "Aumenta a produtividade",
               description:
-                "Ao criar um ambiente de trabalho mais seguro e confiável.",
+                "ao criar um ambiente de trabalho mais seguro e confiável.",
             },
             {
               title: "Melhora a imagem",
               description:
-                "Da empresa ao demonstrar compromisso com a segurança.",
+                "da empresa ao demonstrar compromisso com a segurança.",
             },
             {
               title: "Reduz custos",
-              description: "Com afastamentos e indenizações por acidentes.",
+              description: "com afastamentos e indenizações por acidentes.",
             },
             {
               title: "Garante tranquilidade",
               description:
-                "Ao saber que está em conformidade com todas as exigências legais.",
+                "ao saber que está em conformidade com todas as exigências legais.",
             },
           ],
         },
@@ -656,42 +647,42 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Vistoria técnica",
               description:
-                "Primeiro, realizamos vistoria técnica completa de todas as máquinas.",
+                "primeiro, realizamos vistoria técnica completa de todas as máquinas.",
             },
             {
               title: "Análise de riscos e projeto",
               description:
-                "Em seguida, elaboramos análise de riscos e projeto de adequação.",
+                "em seguida, elaboramos análise de riscos e projeto de adequação.",
             },
             {
               title: "Instalação de proteções",
               description:
-                "Realizamos a instalação de proteções e dispositivos de segurança.",
+                "realizamos a instalação de proteções e dispositivos de segurança.",
             },
             {
               title: "Sinalização",
-              description: "Aplicamos sinalização adequada.",
+              description: "aplicamos sinalização adequada.",
             },
             {
               title: "Procedimentos",
-              description: "Elaboramos procedimentos de trabalho seguro.",
+              description: "elaboramos procedimentos de trabalho seguro.",
             },
             {
               title: "Treinamento",
-              description: "Realizamos treinamento quando necessário.",
+              description: "realizamos treinamento quando necessário.",
             },
             {
               title: "Laudo técnico",
-              description: "Emitimos laudo técnico completo.",
+              description: "emitimos laudo técnico completo.",
             },
             {
               title: "ART",
-              description: "Emitimos ART junto ao CREA.",
+              description: "emitimos ART junto ao CREA.",
             },
             {
               title: "Relatório",
               description:
-                "Fornecemos relatório de conformidade. Todo o processo é acompanhado de perto, garantindo agilidade, qualidade e conformidade total com a NR12.",
+                "fornecemos relatório de conformidade. Todo o processo é acompanhado de perto, garantindo agilidade, qualidade e conformidade total com a NR12.",
             },
           ],
         },
@@ -739,45 +730,45 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Vistoria técnica completa",
               description:
-                "Vistoria técnica completa de todos os sistemas transportadores.",
+                "vistoria técnica completa de todos os sistemas transportadores.",
             },
             {
               title: "Avaliação de condições",
-              description: "Avaliação de condições de segurança.",
+              description: "avaliação de condições de segurança.",
             },
             {
               title: "Análise de riscos",
-              description: "Análise de riscos detalhada.",
+              description: "análise de riscos detalhada.",
             },
             {
               title: "Adequações necessárias",
-              description: "Adequações necessárias quando aplicável.",
+              description: "adequações necessárias quando aplicável.",
             },
             {
               title: "Laudo técnico",
-              description: "Emissão de laudo técnico completo conforme NR11.",
+              description: "emissão de laudo técnico completo conforme NR11.",
             },
             {
               title: "Emissão de ART",
               description:
-                "Emissão de ART (Anotação de Responsabilidade Técnica).",
+                "emissão de ART (Anotação de Responsabilidade Técnica).",
             },
             {
               title: "Relatório de conformidade",
-              description: "Relatório de conformidade.",
+              description: "relatório de conformidade.",
             },
             {
               title: "Orientações",
-              description: "Orientações para operação segura.",
+              description: "orientações para operação segura.",
             },
             {
               title: "Recomendações",
-              description: "Recomendações de manutenção preventiva.",
+              description: "recomendações de manutenção preventiva.",
             },
             {
               title: "Suporte técnico",
               description:
-                "Suporte técnico contínuo. Toda a avaliação é realizada seguindo rigorosamente a NR11 e demais normas técnicas aplicáveis.",
+                "suporte técnico contínuo. Toda a avaliação é realizada seguindo rigorosamente a NR11 e demais normas técnicas aplicáveis.",
             },
           ],
         },
@@ -859,29 +850,29 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Vistoria técnica",
               description:
-                "Primeiro, realizamos vistoria técnica completa de todos os sistemas transportadores.",
+                "primeiro, realizamos vistoria técnica completa de todos os sistemas transportadores.",
             },
             {
               title: "Análise de riscos",
               description:
-                "Em seguida, elaboramos análise de riscos e avaliação de condições.",
+                "em seguida, elaboramos análise de riscos e avaliação de condições.",
             },
             {
               title: "Adequações",
               description:
-                "Realizamos adequações necessárias quando aplicável.",
+                "realizamos adequações necessárias quando aplicável.",
             },
             {
               title: "Laudo técnico",
-              description: "Emitimos laudo técnico completo conforme NR11.",
+              description: "emitimos laudo técnico completo conforme NR11.",
             },
             {
               title: "ART",
-              description: "Emitimos ART junto ao CREA.",
+              description: "emitimos ART junto ao CREA.",
             },
             {
               title: "Relatório",
-              description: "Fornecemos relatório de conformidade.",
+              description: "fornecemos relatório de conformidade.",
             },
             {
               title: "Orientações",
@@ -932,45 +923,45 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Vistoria técnica completa",
               description:
-                "Vistoria técnica completa realizada por engenheiro especializado.",
+                "vistoria técnica completa realizada por engenheiro especializado.",
             },
             {
               title: "Análise estrutural",
-              description: "Análise estrutural detalhada.",
+              description: "análise estrutural detalhada.",
             },
             {
               title: "Verificação de sistemas",
-              description: "Verificação de sistemas hidráulicos e elétricos.",
+              description: "verificação de sistemas hidráulicos.",
             },
             {
               title: "Avaliação de condições",
-              description: "Avaliação de desgastes e condições gerais.",
+              description: "avaliação de desgastes e condições gerais.",
             },
             {
               title: "Testes de funcionamento",
-              description: "Testes de funcionamento quando necessário.",
+              description: "testes de funcionamento quando necessário.",
             },
             {
               title: "Laudo técnico",
-              description: "Emissão de laudo técnico completo.",
+              description: "emissão de laudo técnico completo.",
             },
             {
               title: "Emissão de ART",
               description:
-                "Emissão de ART (Anotação de Responsabilidade Técnica) junto ao CREA.",
+                "emissão de ART (Anotação de Responsabilidade Técnica) junto ao CREA.",
             },
             {
               title: "Relatório",
-              description: "Relatório de condições e recomendações.",
+              description: "relatório de condições e recomendações.",
             },
             {
               title: "Orientações",
-              description: "Orientações para manutenção preventiva.",
+              description: "orientações para manutenção preventiva.",
             },
             {
               title: "Suporte técnico",
               description:
-                "Suporte técnico contínuo. Toda a vistoria é realizada seguindo rigorosamente as normas técnicas aplicáveis.",
+                "suporte técnico contínuo. Toda a vistoria é realizada seguindo rigorosamente as normas técnicas aplicáveis.",
             },
           ],
         },
@@ -1166,32 +1157,32 @@ export const servicesData: Record<string, ServiceArticle> = {
             },
             {
               title: "Laudo técnico",
-              description: "Laudo técnico detalhado com todas as constatações.",
+              description: "laudo técnico detalhado com todas as constatações.",
             },
             {
               title: "Atualização do prontuário",
-              description: "Atualização do prontuário técnico do equipamento.",
+              description: "atualização do prontuário técnico do equipamento.",
             },
             {
               title: "Relatório de conformidade",
-              description: "Relatório de conformidade com a NR13.",
+              description: "relatório de conformidade com a NR13.",
             },
             {
               title: "Recomendações",
-              description: "Recomendações de manutenção preventiva.",
+              description: "recomendações de manutenção preventiva.",
             },
             {
               title: "Orientações",
-              description: "Orientações para operação segura.",
+              description: "orientações para operação segura.",
             },
             {
               title: "Testes não destrutivos",
-              description: "Testes não destrutivos quando necessário.",
+              description: "testes não destrutivos quando necessário.",
             },
             {
               title: "Suporte técnico",
               description:
-                "Suporte técnico contínuo. Toda a documentação é elaborada seguindo rigorosamente a NR13 e demais normas técnicas aplicáveis.",
+                "suporte técnico contínuo. Toda a documentação é elaborada seguindo rigorosamente a NR13 e demais normas técnicas aplicáveis.",
             },
           ],
         },
@@ -1200,36 +1191,36 @@ export const servicesData: Record<string, ServiceArticle> = {
           items: [
             {
               title: "Caldeiras",
-              description: "Caldeiras de todos os tipos e capacidades.",
+              description: "caldeiras de todos os tipos e capacidades.",
             },
             {
               title: "Vasos de pressão",
-              description: "Vasos de pressão industriais.",
+              description: "vasos de pressão industriais.",
             },
             {
               title: "Autoclaves",
-              description: "Autoclaves para hospitais e indústrias.",
+              description: "autoclaves para hospitais e indústrias.",
             },
             {
               title: "Compressores",
-              description: "Compressores de ar e gases.",
+              description: "compressores de ar e gases.",
             },
             {
               title: "Sistemas de vapor",
-              description: "Sistemas de vapor e tubulações pressurizadas.",
+              description: "sistemas de vapor e tubulações pressurizadas.",
             },
             {
               title: "Boilers",
-              description: "Boilers e aquecedores industriais.",
+              description: "boilers e aquecedores industriais.",
             },
             {
               title: "Tanques metálicos",
-              description: "Tanques metálicos de armazenamento.",
+              description: "tanques metálicos de armazenamento.",
             },
             {
               title: "Entre outros",
               description:
-                "Entre outros, atendemos demais equipamentos que operam sob pressão. Atuamos em indústrias químicas e petroquímicas, oficinas mecânicas, postos de combustíveis, hospitais e clínicas, lavanderias industriais, indústrias alimentícias, indústrias têxteis, e qualquer empresa que possua equipamentos sob pressão e precise de inspeção NR13.",
+                "entre outros, atendemos demais equipamentos que operam sob pressão. Atuamos em indústrias químicas e petroquímicas, oficinas mecânicas, postos de combustíveis, hospitais e clínicas, lavanderias industriais, indústrias alimentícias, indústrias têxteis, e qualquer empresa que possua equipamentos sob pressão e precise de inspeção NR13.",
             },
           ],
         },
@@ -1239,266 +1230,40 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Visita técnica",
               description:
-                "Primeiro, agendamos visita técnica para análise inicial do equipamento.",
+                "primeiro, agendamos visita técnica para análise inicial do equipamento.",
             },
             {
               title: "Inspeção detalhada",
               description:
-                "Em seguida, realizamos inspeção detalhada conforme NR13, incluindo testes quando necessário.",
+                "em seguida, realizamos inspeção detalhada conforme NR13, incluindo testes quando necessário.",
             },
             {
               title: "Laudo técnico",
               description:
-                "Elaboramos laudo técnico completo com todas as constatações.",
+                "elaboramos laudo técnico completo com todas as constatações.",
             },
             {
               title: "Prontuário técnico",
-              description: "Atualizamos o prontuário técnico do equipamento.",
+              description: "atualizamos o prontuário técnico do equipamento.",
             },
             {
               title: "ART",
-              description: "Emitimos ART junto ao CREA.",
+              description: "emitimos ART junto ao CREA.",
             },
             {
               title: "Relatório",
-              description: "Fornecemos relatório de conformidade.",
+              description: "fornecemos relatório de conformidade.",
             },
             {
               title: "Orientações",
               description:
-                "Oferecemos orientações para manutenção e operação segura. Todo o processo é acompanhado de perto, garantindo agilidade, qualidade e conformidade total com a NR13.",
+                "oferecemos orientações para manutenção e operação segura. Todo o processo é acompanhado de perto, garantindo agilidade, qualidade e conformidade total com a NR13.",
             },
           ],
         },
       ],
       conclusion:
         "Evite acidentes graves, paralisação de equipamentos e problemas legais mantendo seus equipamentos sob pressão em conformidade com a NR13. Com nosso serviço especializado em inspeção NR13, cuidamos de toda a verificação, emissão de prontuário técnico, laudo técnico e ART necessários para manter seus equipamentos seguros e em conformidade. Oferecemos também acompanhamento contínuo e orientações para manutenção preventiva, garantindo segurança para sua equipe e confiabilidade operacional. Proteja sua empresa, funcionários e operação! Solicite nossa visita técnica e mantenha seus equipamentos seguros e conforme a NR13. Entre em contato conosco agora mesmo e peça seu orçamento sem compromisso!",
-    },
-  },
-  "laudo-tecnico-art": {
-    slug: "laudo-tecnico-art",
-    title: "Laudo Técnico e ART - Anotação de Responsabilidade Técnica | ÍTRIO",
-    metaDescription:
-      "Elaboração de laudos técnicos e emissão de ART com credibilidade, segurança e responsabilidade técnica. Engenheiros registrados no CREA. Laudos técnicos para vistorias, adequações, projetos, obras e instalações.",
-    keywords: [
-      "laudo técnico",
-      "ART",
-      "anotação responsabilidade técnica",
-      "engenheiro CREA",
-      "laudo engenharia",
-      "certificado técnico",
-      "documentação técnica",
-      "ART engenharia",
-      "emissão ART",
-      "laudo técnico CREA",
-      "ART obrigatória",
-      "documentação técnica engenharia",
-    ],
-    heroImage:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=600&fit=crop",
-    images: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-    ],
-    content: {
-      introduction:
-        "PRECISA ELABORAR LAUDO TÉCNICO OU EMITIR ART PARA SEU PROJETO OU SERVIÇO? A ÍTRIO Engenharia elabora laudos técnicos completos e emite ART (Anotação de Responsabilidade Técnica) com total credibilidade, segurança e responsabilidade técnica. Engenheiros registrados no CREA com ampla experiência em diversos tipos de serviços. Atendimento ágil e suporte completo até a emissão do laudo técnico e ART. Para vistorias, adequações, projetos, obras, instalações, manutenções e demais serviços de engenharia.",
-      sections: [
-        {
-          title: "O QUE É ART E POR QUE É OBRIGATÓRIA?",
-          content:
-            "A ART (Anotação de Responsabilidade Técnica) é um documento obrigatório emitido por profissionais registrados no CREA que comprova a responsabilidade técnica sobre projetos, obras ou serviços de engenharia. É essencial para garantir a legalidade e segurança de trabalhos técnicos. A ART é obrigatória para praticamente todos os serviços de engenharia, incluindo vistorias, adequações, projetos, obras, instalações, manutenções, laudos técnicos e demais atividades técnicas. Sem a ART adequada, sua empresa corre riscos sérios: problemas legais, invalidação de documentos, responsabilidade técnica não comprovada, e até problemas com órgãos fiscalizadores.",
-        },
-        {
-          title: "O QUE ESTÁ INCLUÍDO NO NOSSO SERVIÇO",
-          items: [
-            {
-              title: "Laudo técnico",
-              description: "Elaboração de laudo técnico detalhado e completo.",
-            },
-            {
-              title: "Emissão de ART",
-              description:
-                "Emissão de ART (Anotação de Responsabilidade Técnica) junto ao CREA.",
-            },
-            {
-              title: "Análise técnica",
-              description: "Análise técnica completa do serviço ou projeto.",
-            },
-            {
-              title: "Avaliação de conformidade",
-              description: "Avaliação de conformidade com normas técnicas.",
-            },
-            {
-              title: "Documentação completa",
-              description: "Documentação completa e organizada.",
-            },
-            {
-              title: "Relatório técnico",
-              description: "Relatório técnico com todas as constatações.",
-            },
-            {
-              title: "Orientações técnicas",
-              description: "Orientações técnicas quando necessário.",
-            },
-            {
-              title: "Suporte técnico",
-              description:
-                "Suporte técnico contínuo. Toda a documentação é elaborada seguindo rigorosamente as normas técnicas aplicáveis e com total responsabilidade técnica.",
-            },
-          ],
-        },
-        {
-          title: "NOSSOS SERVIÇOS DE LAUDO TÉCNICO E ART",
-          items: [
-            {
-              title: "Vistorias técnicas",
-              description: "Vistorias técnicas de equipamentos e instalações.",
-            },
-            {
-              title: "Adequações",
-              description: "Adequações de máquinas e equipamentos.",
-            },
-            {
-              title: "Projetos de engenharia",
-              description: "Projetos de engenharia.",
-            },
-            {
-              title: "Obras e instalações",
-              description: "Obras e instalações.",
-            },
-            {
-              title: "Manutenções e reparos",
-              description: "Manutenções e reparos.",
-            },
-            {
-              title: "Análises técnicas",
-              description: "Análises técnicas e avaliações.",
-            },
-            {
-              title: "Demais serviços",
-              description:
-                "Demais serviços que necessitam de documentação técnica. Emitimos ART para todos os tipos de serviços de engenharia, garantindo que cada trabalho tenha a responsabilidade técnica adequada registrada no CREA. Realizamos também análises técnicas, avaliações de conformidade e oferecemos documentação completa com total credibilidade.",
-            },
-          ],
-        },
-        {
-          title: "QUANDO É NECESSÁRIO LAUDO TÉCNICO E ART?",
-          content:
-            "ART e laudos técnicos são necessários para: vistorias técnicas de equipamentos, instalações e edificações; adequações de máquinas e equipamentos às normas; projetos de engenharia de todos os tipos; obras e instalações de engenharia; manutenções e reparos técnicos; análises técnicas e avaliações; certificações e regularizações; e demais serviços de engenharia. São documentos obrigatórios que garantem a legalidade, segurança e responsabilidade técnica dos trabalhos realizados. Sem esses documentos, os trabalhos podem ser considerados inválidos ou ilegais.",
-        },
-        {
-          title: "BENEFÍCIOS DO LAUDO TÉCNICO E ART ADEQUADOS",
-          items: [
-            {
-              title: "Legalidade",
-              description:
-                "Garantem legalidade dos trabalhos, comprovando que foram realizados por profissionais habilitados.",
-            },
-            {
-              title: "Segurança",
-              description:
-                "Garantem segurança ao documentar que os trabalhos seguem normas técnicas.",
-            },
-            {
-              title: "Proteção",
-              description:
-                "Protegem contra responsabilidade técnica não comprovada.",
-            },
-            {
-              title: "Facilita fiscalização",
-              description:
-                "Facilitam processos de fiscalização e regularização.",
-            },
-            {
-              title: "Aumenta credibilidade",
-              description: "Aumentam a credibilidade dos trabalhos realizados.",
-            },
-            {
-              title: "Facilita transações",
-              description:
-                "Facilitam processos de compra, venda e financiamento.",
-            },
-            {
-              title: "Garante tranquilidade",
-              description:
-                "Garantem tranquilidade ao saber que está tudo documentado e em conformidade.",
-            },
-          ],
-        },
-        {
-          title: "TIPOS DE SERVIÇOS QUE ATENDEMOS",
-          items: [
-            {
-              title: "Vistorias técnicas",
-              description: "Vistorias técnicas de todos os tipos.",
-            },
-            {
-              title: "Adequações",
-              description: "Adequações de máquinas e equipamentos.",
-            },
-            {
-              title: "Projetos",
-              description: "Projetos de engenharia.",
-            },
-            {
-              title: "Obras",
-              description: "Obras e instalações.",
-            },
-            {
-              title: "Manutenções",
-              description: "Manutenções e reparos técnicos.",
-            },
-            {
-              title: "Análises",
-              description: "Análises técnicas e avaliações.",
-            },
-            {
-              title: "Certificações",
-              description: "Certificações e regularizações.",
-            },
-            {
-              title: "Entre outros",
-              description:
-                "Entre outros, oferecemos demais serviços de engenharia que necessitam de laudo técnico e ART. Atuamos em empresas de todos os segmentos, indústrias, construtoras, condomínios, estabelecimentos comerciais, e qualquer cliente que precise de documentação técnica adequada.",
-            },
-          ],
-        },
-        {
-          title: "PROCESSO DE ELABORAÇÃO DE LAUDO E EMISSÃO DE ART",
-          items: [
-            {
-              title: "Análise inicial",
-              description:
-                "Primeiro, analisamos o serviço ou projeto a ser documentado.",
-            },
-            {
-              title: "Vistoria ou análise",
-              description:
-                "Em seguida, realizamos vistoria ou análise técnica quando necessário.",
-            },
-            {
-              title: "Elaboração do laudo",
-              description:
-                "Elaboramos laudo técnico detalhado com todas as constatações.",
-            },
-            {
-              title: "Emissão de ART",
-              description: "Emitimos ART junto ao CREA.",
-            },
-            {
-              title: "Documentação",
-              description: "Fornecemos documentação completa e organizada.",
-            },
-            {
-              title: "Suporte",
-              description:
-                "Oferecemos suporte técnico contínuo. Todo o processo é acompanhado de perto, garantindo agilidade, qualidade e conformidade total com as normas técnicas.",
-            },
-          ],
-        },
-      ],
-      conclusion:
-        "Evite problemas legais, invalidação de documentos e responsabilidade técnica não comprovada mantendo seus projetos e serviços com laudo técnico e ART adequados. Com nosso serviço especializado em elaboração de laudos técnicos e emissão de ART, cuidamos de toda a documentação técnica necessária para garantir a legalidade, segurança e responsabilidade técnica dos seus trabalhos. Oferecemos também suporte técnico contínuo e orientações quando necessário, garantindo que tudo esteja documentado e em conformidade. Proteja seus projetos e serviços! Solicite nosso serviço e mantenha toda sua documentação técnica em conformidade. Entre em contato conosco agora mesmo e peça seu orçamento sem compromisso!",
     },
   },
   "elevadores-plataformas": {
@@ -1790,12 +1555,12 @@ export const servicesData: Record<string, ServiceArticle> = {
     images: [],
     content: {
       introduction:
-        "PRECISA DE PERÍCIA TÉCNICA OU ASSISTENTE TÉCNICO EM PROCESSO JUDICIAL OU ADMINISTRATIVO? A ÍTRIO Engenharia oferece serviços especializados de perícia técnica e assistência técnica em processos judiciais, trabalhistas e administrativos. Engenheiros peritos com ampla experiência em diversos tipos de perícias técnicas.",
+        "PRECISA DE PERÍCIA TÉCNICA OU ASSISTENTE TÉCNICO EM PROCESSO JUDICIAL? A ÍTRIO Engenharia oferece serviços especializados de perícia técnica e assistência técnica em processos judiciais. Engenheiros peritos com ampla experiência em diversos tipos de perícias técnicas.",
       sections: [
         {
           title: "O QUE É PERÍCIA TÉCNICA",
           content:
-            "Perícia técnica é uma análise técnica realizada por profissional habilitado para esclarecer questões técnicas em processos judiciais, trabalhistas ou administrativos. O perito técnico elabora laudo pericial detalhado com análises, conclusões e recomendações técnicas. É essencial para processos que envolvem questões técnicas de engenharia.",
+            "Perícia técnica é uma análise técnica realizada por profissional habilitado para esclarecer questões técnicas em processos judiciais. O perito técnico elabora laudo pericial detalhado com análises, conclusões e recomendações técnicas. É essencial para processos que envolvem questões técnicas de engenharia.",
         },
         {
           title: "NOSSOS SERVIÇOS DE PERÍCIA E ASSISTÊNCIA TÉCNICA",
@@ -1866,7 +1631,7 @@ export const servicesData: Record<string, ServiceArticle> = {
         {
           title: "QUANDO É NECESSÁRIO ENGENHEIRO RT",
           content:
-            "Engenheiro RT é necessário para empresas que desenvolvem atividades técnicas; estabelecimentos comerciais com sistemas técnicos; empresas de manutenção; e demais empresas que necessitam de responsável técnico registrado no CREA. É obrigatório conforme legislação do CREA.",
+            "Engenheiro RT é necessário para empresas que desenvolvem atividades técnicas, estabelecimentos comerciais com sistemas técnicos, empresas de manutenção, e demais empresas que necessitam de responsável técnico registrado no CREA. É obrigatório conforme legislação do CREA.",
         },
         {
           title: "BENEFÍCIOS DE TER ENGENHEIRO RT",
@@ -2091,7 +1856,7 @@ export const servicesData: Record<string, ServiceArticle> = {
         {
           title: "QUANDO É NECESSÁRIA A RECLASSIFICAÇÃO DE MONTA?",
           content:
-            "A reclassificação de monta veicular é necessária quando: o veículo sofre sinistro com danos significativos; há discordância ou necessidade de revisão da classificação de monta atribuída anteriormente; o veículo passou por reparos estruturais ou mecânicos relevantes; há exigência do DETRAN ou necessidade de regularização documental; o proprietário busca comprovação técnica das condições do veículo para fins legais.",
+            "A reclassificação de monta veicular é necessária quando o veículo sofre sinistro com danos significativos, há discordância ou necessidade de revisão da classificação de monta atribuída anteriormente, o veículo passou por reparos estruturais ou mecânicos relevantes, há exigência do DETRAN ou necessidade de regularização documental, o proprietário busca comprovação técnica das condições do veículo para fins legais.",
         },
         {
           title: "BENEFÍCIOS DA RECLASSIFICAÇÃO DE MONTA ADEQUADA",
@@ -2241,7 +2006,7 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Análise de conformidade",
               description:
-                "Análise de conformidade com normas do Corpo de Bombeiros.",
+                "Regularização, adequação e manutenção de sistemas de prevenção a incêndio.",
             },
             {
               title: "Laudo técnico",

@@ -584,9 +584,12 @@ const ServiceArticle = () => {
                     isImportance ? "importance" : "benefits"
                   ) as string[];
                 } else if (section.items) {
-                  sentences = section.items.map(
-                    (item) => `${item.title}: ${item.description}`
-                  );
+                  sentences = section.items.map((item) => {
+                    if (item.description && item.description.trim()) {
+                      return `${item.title} ${item.description}`;
+                    }
+                    return item.title;
+                  });
                 }
 
                 if (sentences.length === 0) return null;

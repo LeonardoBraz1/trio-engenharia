@@ -67,13 +67,6 @@ const ServicesSection = () => {
       slug: "nr13-vasos-pressao",
     },
     {
-      icon: FileCheck,
-      title: "Laudo Técnico e ART",
-      description:
-        "Compromisso com credibilidade, segurança e responsabilidade técnica.",
-      slug: "laudo-tecnico-art",
-    },
-    {
       icon: [ArrowUpDown, Accessibility],
       title: "Elevadores e Plataformas",
       description: "Inspeções e laudos conforme normas de acessibilidade.",

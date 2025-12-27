@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import {
   getTestimonials,
   getInitials,
@@ -12,10 +13,60 @@ import { ScrollAnimation } from "@/hooks/useScrollAnimation";
 const TestimonialsSection = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const scrollContentRef = useRef<HTMLDivElement>(null);
-  const testimonials = getTestimonials(); // Ordenados por data (mais recentes primeiro)
+  const testimonials = getTestimonials();
   const isDraggingRef = useRef(false);
   const startXRef = useRef(0);
   const scrollLeftRef = useRef(0);
+  const isPausedRef = useRef(false);
+  const isUserInteractingRef = useRef(false);
+  const scrollPositionRef = useRef<number | null>(null);
+
+  const scrollTo = (direction: "left" | "right", e?: React.MouseEvent) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    const content = scrollContentRef.current;
+    if (!content) return;
+
+    isPausedRef.current = true;
+    isUserInteractingRef.current = true;
+
+    const cards = Array.from(content.children) as HTMLElement[];
+    if (cards.length === 0) return;
+
+    const firstCard = cards[0];
+    const cardWidth = firstCard.offsetWidth;
+    const gap = window.innerWidth >= 640 ? 16 : 12;
+    const scrollAmount = cardWidth + gap;
+
+    const currentScroll = container.scrollLeft;
+    const maxScroll = container.scrollWidth - container.clientWidth;
+
+    let newScroll: number;
+    if (direction === "left") {
+      newScroll = Math.max(0, currentScroll - scrollAmount);
+    } else {
+      newScroll = Math.min(maxScroll, currentScroll + scrollAmount);
+    }
+
+    container.scrollTo({
+      left: newScroll,
+      behavior: "smooth",
+    });
+
+    setTimeout(() => {
+      scrollPositionRef.current = container.scrollLeft;
+      isUserInteractingRef.current = false;
+      if (!container.matches(":hover") && !isDraggingRef.current) {
+        isPausedRef.current = false;
+      }
+    }, 600);
+  };
 
   useEffect(() => {
     const container = scrollContainerRef.current;
@@ -25,8 +76,6 @@ const TestimonialsSection = () => {
     let animationFrameId: number;
     let scrollPosition = 0;
     const scrollSpeed = 0.5;
-    let isPaused = false;
-    let isUserInteracting = false;
 
     // Duplicar conteúdo para scroll infinito
     const clonedContent = content.cloneNode(true) as HTMLElement;
@@ -36,7 +85,12 @@ const TestimonialsSection = () => {
     const contentWidth = content.scrollWidth;
 
     const scroll = () => {
-      if (!isPaused && !isUserInteracting && !isDraggingRef.current) {
+      if (!isPausedRef.current && !isUserInteractingRef.current && !isDraggingRef.current) {
+        if (scrollPositionRef.current !== null) {
+          scrollPosition = scrollPositionRef.current;
+          scrollPositionRef.current = null;
+        }
+        
         scrollPosition += scrollSpeed;
 
         // Reset quando chegar no final
@@ -46,26 +100,29 @@ const TestimonialsSection = () => {
 
         container.scrollLeft = scrollPosition;
         scrollLeftRef.current = scrollPosition;
+      } else {
+        scrollPosition = container.scrollLeft;
       }
       animationFrameId = requestAnimationFrame(scroll);
     };
 
     // Pausar ao passar o mouse ou interagir
     const handleMouseEnter = () => {
-      isPaused = true;
+      isPausedRef.current = true;
     };
 
     const handleMouseLeave = () => {
-      if (!isUserInteracting && !isDraggingRef.current) {
-        isPaused = false;
+      if (!isUserInteractingRef.current && !isDraggingRef.current) {
+        scrollPositionRef.current = container.scrollLeft;
+        isPausedRef.current = false;
       }
     };
 
     // Drag handlers
     const handleMouseDown = (e: MouseEvent) => {
       isDraggingRef.current = true;
-      isUserInteracting = true;
-      isPaused = true;
+      isUserInteractingRef.current = true;
+      isPausedRef.current = true;
       startXRef.current = e.pageX - container.offsetLeft;
       scrollLeftRef.current = container.scrollLeft;
       container.style.cursor = "grabbing";
@@ -84,11 +141,12 @@ const TestimonialsSection = () => {
       if (isDraggingRef.current) {
         isDraggingRef.current = false;
         container.style.cursor = "grab";
+        scrollPositionRef.current = container.scrollLeft;
         // Aguardar um pouco antes de retomar scroll automático
         setTimeout(() => {
-          isUserInteracting = false;
+          isUserInteractingRef.current = false;
           if (!container.matches(":hover")) {
-            isPaused = false;
+            isPausedRef.current = false;
           }
         }, 2000);
       }
@@ -96,8 +154,8 @@ const TestimonialsSection = () => {
 
     // Touch handlers para mobile
     const handleTouchStart = (e: TouchEvent) => {
-      isUserInteracting = true;
-      isPaused = true;
+      isUserInteractingRef.current = true;
+      isPausedRef.current = true;
       startXRef.current = e.touches[0].pageX - container.offsetLeft;
       scrollLeftRef.current = container.scrollLeft;
     };
@@ -109,23 +167,25 @@ const TestimonialsSection = () => {
     };
 
     const handleTouchEnd = () => {
-      isUserInteracting = false;
+      scrollPositionRef.current = container.scrollLeft;
+      isUserInteractingRef.current = false;
       setTimeout(() => {
         if (!container.matches(":hover")) {
-          isPaused = false;
+          isPausedRef.current = false;
         }
       }, 2000);
     };
 
     // Wheel handler
     const handleWheel = (e: WheelEvent) => {
-      isUserInteracting = true;
-      isPaused = true;
+      isUserInteractingRef.current = true;
+      isPausedRef.current = true;
       container.scrollLeft += e.deltaY;
       setTimeout(() => {
-        isUserInteracting = false;
+        scrollPositionRef.current = container.scrollLeft;
+        isUserInteractingRef.current = false;
         if (!container.matches(":hover")) {
-          isPaused = false;
+          isPausedRef.current = false;
         }
       }, 2000);
     };
@@ -193,10 +253,10 @@ const TestimonialsSection = () => {
         </ScrollAnimation>
 
         {/* Carrossel horizontal com scroll automático */}
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full py-4">
           <div
             ref={scrollContainerRef}
-            className="flex gap-3 sm:gap-4 overflow-x-auto scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] cursor-grab select-none"
+            className="flex gap-3 sm:gap-4 overflow-x-auto scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] cursor-grab select-none px-8 sm:px-12 md:px-16"
             style={{ userSelect: "none" }}
           >
             <div
@@ -308,6 +368,26 @@ const TestimonialsSection = () => {
               })}
             </div>
           </div>
+          <Button
+            variant="outline"
+            size="icon"
+            className="absolute -left-3 sm:-left-4 md:-left-6 top-1/2 -translate-y-1/2 z-20 bg-background/95 backdrop-blur-sm hover:bg-background shadow-lg border-2 h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 pointer-events-auto"
+            onClick={(e) => scrollTo("left", e)}
+            onMouseDown={(e) => e.stopPropagation()}
+            aria-label="Depoimento anterior"
+          >
+            <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+          </Button>
+          <Button
+            variant="outline"
+            size="icon"
+            className="absolute -right-3 sm:-right-4 md:-right-6 top-1/2 -translate-y-1/2 z-20 bg-background/95 backdrop-blur-sm hover:bg-background shadow-lg border-2 h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 pointer-events-auto"
+            onClick={(e) => scrollTo("right", e)}
+            onMouseDown={(e) => e.stopPropagation()}
+            aria-label="Próximo depoimento"
+          >
+            <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+          </Button>
         </div>
 
         <ScrollAnimation animation="fade-up" delay={0.6}>
