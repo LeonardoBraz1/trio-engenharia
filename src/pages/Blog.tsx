@@ -15,7 +15,7 @@ const Blog = () => {
     window.scrollTo(0, 0);
 
     const baseUrl = window.location.origin;
-    const blogUrl = `${baseUrl}/trio-engenharia/blog`;
+    const blogUrl = `${baseUrl}/blog`;
 
     document.title =
       "Blog - Artigos sobre Engenharia e Segurança Industrial | ÍTRIO Engenharia";

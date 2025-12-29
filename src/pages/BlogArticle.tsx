@@ -52,7 +52,7 @@ const BlogArticle = () => {
 
     if (article) {
       const baseUrl = window.location.origin;
-      const articleUrl = `${baseUrl}/trio-engenharia/blog/${article.slug}`;
+      const articleUrl = `${baseUrl}/blog/${article.slug}`;
       const imageUrl = article.image.startsWith("http")
         ? article.image
         : `${baseUrl}${article.image}`;
@@ -167,7 +167,7 @@ const BlogArticle = () => {
         }
         prevLink.setAttribute(
           "href",
-          `${baseUrl}/trio-engenharia/blog/${prevArticle.slug}`
+          `${baseUrl}/blog/${prevArticle.slug}`
         );
       } else {
         const prevLink = document.querySelector('link[rel="prev"]');
@@ -183,7 +183,7 @@ const BlogArticle = () => {
         }
         nextLink.setAttribute(
           "href",
-          `${baseUrl}/trio-engenharia/blog/${nextArticle.slug}`
+          `${baseUrl}/blog/${nextArticle.slug}`
         );
       } else {
         const nextLink = document.querySelector('link[rel="next"]');
@@ -244,13 +244,13 @@ const BlogArticle = () => {
             "@type": "ListItem",
             position: 1,
             name: "Início",
-            item: `${baseUrl}/trio-engenharia`,
+            item: `${baseUrl}`,
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Blog",
-            item: `${baseUrl}/trio-engenharia/blog`,
+            item: `${baseUrl}/blog`,
           },
           {
             "@type": "ListItem",
