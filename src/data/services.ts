@@ -778,31 +778,31 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Previne acidentes",
               description:
-                "De trabalho, garantindo a segurança dos trabalhadores e evitando lesões graves ou fatais.",
+                "de trabalho, garantindo a segurança dos trabalhadores e evitando lesões graves ou fatais.",
             },
             {
               title: "Evita multas",
               description:
-                "E autuações trabalhistas do Ministério do Trabalho, mantendo sua empresa em conformidade com a legislação.",
+                "e autuações trabalhistas do Ministério do Trabalho, mantendo sua empresa em conformidade com a legislação.",
             },
             {
               title: "Reduz riscos",
               description:
-                "De responsabilidade civil e criminal em caso de acidentes.",
+                "de responsabilidade civil e criminal em caso de acidentes.",
             },
             {
               title: "Aumenta a produtividade",
-              description: "Ao criar um ambiente de trabalho mais seguro.",
+              description: "ao criar um ambiente de trabalho mais seguro.",
             },
             {
               title: "Melhora a imagem",
               description:
-                "Da empresa ao demonstrar compromisso com a segurança.",
+                "da empresa ao demonstrar compromisso com a segurança.",
             },
             {
               title: "Garante tranquilidade",
               description:
-                "Ao saber que está em conformidade com todas as exigências legais.",
+                "ao saber que está em conformidade com todas as exigências legais.",
             },
           ],
         },
@@ -977,30 +977,30 @@ export const servicesData: Record<string, ServiceArticle> = {
             {
               title: "Evita paralisação",
               description:
-                "Inesperada de equipamentos através de manutenção preventiva adequada.",
+                "inesperada de equipamentos através de manutenção preventiva adequada.",
             },
             {
               title: "Reduz custos",
               description:
-                "Com reparos corretivos ao identificar problemas precocemente.",
+                "com reparos corretivos ao identificar problemas precocemente.",
             },
             {
               title: "Garante conformidade legal",
-              description: "Com emissão de ART adequada.",
+              description: "com emissão de ART adequada.",
             },
             {
               title: "Aumenta vida útil",
               description:
-                "Aumenta a vida útil dos equipamentos através de manutenção preventiva.",
+                "aumenta a vida útil dos equipamentos através de manutenção preventiva.",
             },
             {
               title: "Melhora produtividade",
-              description: "Ao manter equipamentos em condições ideais.",
+              description: "ao manter equipamentos em condições ideais.",
             },
             {
               title: "Garante tranquilidade",
               description:
-                "Ao saber que seus equipamentos estão seguros e em conformidade.",
+                "ao saber que seus equipamentos estão seguros e em conformidade.",
             },
           ],
         },
