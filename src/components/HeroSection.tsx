@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-engineering.jpg";
+const heroImage = "/hero-engineering.jpg";
 
 const HeroSection = () => {
   const whatsappLink =

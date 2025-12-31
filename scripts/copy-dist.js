@@ -17,12 +17,36 @@ try {
     process.exit(1);
   }
   
+  const root404Path = join(rootPath, '404.html');
+  
+  if (existsSync(distIndexPath)) {
+    const distIndexContent = readFileSync(distIndexPath, 'utf-8');
+    writeFileSync(root404Path, distIndexContent, 'utf-8');
+    console.log('✓ 404.html copiado do index.html para a raiz');
+  }
+  
   const assetsPath = join(distPath, 'assets');
   const rootAssetsPath = join(rootPath, 'assets');
   
   if (existsSync(assetsPath)) {
     if (!existsSync(rootAssetsPath)) {
       mkdirSync(rootAssetsPath, { recursive: true });
+    }
+    
+    // Limpar arquivos antigos de imagem hero-engineering da pasta assets
+    try {
+      const existingFiles = readdirSync(rootAssetsPath);
+      for (const file of existingFiles) {
+        if (file.startsWith('hero-engineering') && file.endsWith('.jpg')) {
+          const oldFilePath = join(rootAssetsPath, file);
+          if (existsSync(oldFilePath)) {
+            copyFileSync(oldFilePath, oldFilePath + '.backup');
+            // Não removemos, apenas fazemos backup
+          }
+        }
+      }
+    } catch (err) {
+      // Ignora erros ao limpar
     }
     
     const files = readdirSync(assetsPath);
@@ -36,7 +60,7 @@ try {
     console.log('✓ Arquivos de assets copiados para a raiz');
   }
   
-  const publicFiles = ['azul.png', 'branco.png', 'favicon.ico', 'placeholder.svg', 'robots.txt', 'sitemap.xml'];
+  const publicFiles = ['azul.png', 'branco.png', 'favicon.ico', 'placeholder.svg', 'robots.txt', 'sitemap.xml', 'hero-engineering.jpg', '.htaccess'];
   
   for (const file of publicFiles) {
     const srcPath = join(distPath, file);
@@ -48,6 +72,15 @@ try {
   }
   
   console.log('✓ Arquivos públicos copiados para a raiz');
+  
+  // Copiar .htaccess da pasta public também
+  const publicHtaccessPath = join(rootPath, 'public', '.htaccess');
+  const rootHtaccessPath = join(rootPath, '.htaccess');
+  if (existsSync(publicHtaccessPath)) {
+    copyFileSync(publicHtaccessPath, rootHtaccessPath);
+    console.log('✓ .htaccess copiado da pasta public para a raiz');
+  }
+  
   console.log('✓ Build concluído e arquivos copiados para a raiz!');
 } catch (error) {
   console.error('✗ Erro ao copiar arquivos:', error.message);
